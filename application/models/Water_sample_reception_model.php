@@ -72,39 +72,25 @@ class Water_sample_reception_model extends CI_Model
         return $this->datatables->generate();
     }
 
-    function subjson2($id) {
-        $this->datatables->select('a.testing_id, b.testing_type, a.date_collected,
-        a.time_collected, a.no_submitted, a.sample_barcode, a.flag');
+    function subjson2($id2) {
+        $this->datatables->select('a.testing_id, b.testing_type, a.date_collected, a.time_collected, a.no_submitted, a.sample_barcode, a.flag');
         $this->datatables->from('sample_reception_testing a');
         $this->datatables->join('ref_testing b', 'a.testing_type_id = b.testing_type_id', 'left');
+        $this->datatables->where('a.sample_id', $id2);
         $this->datatables->where('a.flag', '0');
-        $this->datatables->where('a.sample_id', $id);
-        $lvl = $this->session->userdata('id_user_level');
 
+        $lvl = $this->session->userdata('id_user_level');
         if ($lvl == 7){
-            $this->datatables->add_column('action', '', 'a.testing_id');
+            $this->datatables->add_column('action', '', 'testing_id');
         }
         else if (($lvl == 2) | ($lvl == 3)){
-            $this->datatables->add_column('action', '<button type="button" class="btn_edit_det btn btn-info btn-sm" aria-hidden="true"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>Update</button>', 'a.testing_id');
+            $this->datatables->add_column('action', '<button type="button" class="btn_edit_det btn btn-info btn-sm" aria-hidden="true"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>Update</button>', 'testing_id');
         }
         else {
             $this->datatables->add_column('action', '<button type="button" class="btn_edit_det btn btn-info btn-sm" aria-hidden="true"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>'." 
-                ".anchor(site_url('Water_sample_reception/delete_detail/$1'),'<i class="fa fa-trash-o" aria-hidden="true"></i>','class="btn btn-danger btn-sm" onclick="javasciprt: return confirm(\'Confirm deleting this sample?\')"'), 'a.testing_id');
+                ".anchor(site_url('Water_sample_reception/delete_detail/$1'),'<i class="fa fa-trash-o" aria-hidden="true"></i>','class="btn btn-danger btn-sm" onclick="javasciprt: return confirm(\'Confirm deleting this sample?\')"'), 'testing_id');
             }
-
-
-        // $lvl = $this->session->userdata('id_user_level');
-        // if ($lvl == 7){
-        //     $this->datatables->add_column('action', '', 'testing_id');
-        // }
-        // else if (($lvl == 2) | ($lvl == 3)){
-        //     $this->datatables->add_column('action', '<button type="button" class="btn_edit btn btn-info btn-sm" aria-hidden="true"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>', 'testing_id');
-        // }
-        // else {
-        //     $this->datatables->add_column('action', '<button type="button" class="btn_edit btn btn-info btn-sm" aria-hidden="true"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>'." 
-        //         ".anchor(site_url('Water_sample_reception/delete/$1'),'<i class="fa fa-trash-o" aria-hidden="true"></i>','class="btn btn-danger btn-sm" onclick="javasciprt: return confirm(\'Confirm deleting testing ID : $1 ?\')"'), 'testing_id');
-        // }
-         $this->datatables->generate();
+        return $this->datatables->generate();
     }
 
 

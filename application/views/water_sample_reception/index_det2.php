@@ -209,7 +209,6 @@
         // }
 
 		
-		var sample_id = $('#sample_id').val();
 		var base_url = location.hostname;
 		$.fn.dataTableExt.oApi.fnPagingInfo = function(oSettings)
 		{
@@ -224,6 +223,7 @@
 			};
 		};
 
+		var sample_id = $('#sample_id').val();
 		table = $("#example3").DataTable({
 			oLanguage: {
 				sProcessing: "Loading data, please wait..."
@@ -236,6 +236,8 @@
 			bFilter: false,
 			ajax: {"url": "../../Water_sample_reception/subjson2?id2="+sample_id, "type": "POST"},
 			columns: [
+				// {"data": "sample_id"}, 
+				// {"data": "sample_description"},
 				{"data": "testing_id"},
 				{"data": "testing_type"}, 
 				{"data": "date_collected"},
@@ -248,19 +250,11 @@
 					"className" : "text-center"
 				}
 			],
-			// columnDefs: [
-			// 	{
-			// 		targets: [0], // Index of the 'estimate_price' column
-			// 		className: 'text-right' // Apply right alignment to this column
-			// 	}
-			// ],
 			order: [[0, 'asc']],
 			rowCallback: function(row, data, iDisplayIndex) {
 				var info = this.fnPagingInfo();
 				var page = info.iPage;
 				var length = info.iLength;
-				// var index = page * length + (iDisplayIndex + 1);
-				// $('td:eq(0)', row).html(index);
 			}
 		});
 
@@ -308,7 +302,7 @@
 		$('#example3').on('click', '.btn_edit_det', function(){
 			let tr = $(this).parent().parent();
 			let data = table.row(tr).data();
-			console.log(data);
+			// console.log(data);
 			$('#mode_det').val('edit');
 			$('#modal-title-detail').html('<i class="fa fa-pencil-square"></i> Update samples<span id="my-another-cool-loader"></span>');
 			$('#testing_id').attr('readonly', true);
