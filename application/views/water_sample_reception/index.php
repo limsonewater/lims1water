@@ -57,12 +57,12 @@
                         <input id="mode" name="mode" type="hidden" class="form-control input-sm">
                         <!-- <input id="id_req" name="id_req" type="hidden" class="form-control input-sm"> -->
 
-                        <div class="form-group">
+                        <!-- <div class="form-group">
                             <label for="project_id" class="col-sm-4 control-label">Project ID</label>
                             <div class="col-sm-8">
-                                <input id="project_id" name="project_id" type="text" class="form-control" placeholder="Project ID">
+                                <input id="project_id" name="project_id" type="text" class="form-control"  value="<?php echo set_value('project_id'); ?>"  disabled>
                             </div>
-                        </div>
+                        </div> -->
 
                         <div class="form-group">
                             <label for="client_id" class="col-sm-4 control-label">Client</label>

@@ -86,42 +86,39 @@ class Water_sample_reception extends CI_Controller
         }
     }     
 
-    public function save() 
-    {
-        $mode = $this->input->post('mode',TRUE);
-        $id = $this->input->post('project_id',TRUE);
+    public function save() {
+        $mode = $this->input->post('mode', TRUE);
+        $id = $this->input->post('project_id', TRUE);
         $dt = new DateTime();
-
-        if ($mode=="insert"){
+    
+        if ($mode == "insert") {
             $data = array(
-                'project_id' => $this->input->post('project_id',TRUE),
-                'client_id' => $this->input->post('client_id',TRUE),
-                'date_arrival' => $this->input->post('date_arrival',TRUE),
-                'time_arrival' => $this->input->post('time_arrival',TRUE),
-                'comments' => trim($this->input->post('comments',TRUE)),
+                'client_id' => $this->input->post('client_id', TRUE),
+                'date_arrival' => $this->input->post('date_arrival', TRUE),
+                'time_arrival' => $this->input->post('time_arrival', TRUE),
+                'comments' => trim($this->input->post('comments', TRUE)),
                 'uuid' => $this->uuid->v4(),
                 'user_created' => $this->session->userdata('id_users'),
                 'date_created' => $dt->format('Y-m-d H:i:s'),
-                );
-
+            );
+    
             $this->Water_sample_reception_model->insert($data);
-            $this->session->set_flashdata('message', 'Create Record Success');    
-      
-        }
-        else if ($mode=="edit"){
+            $this->session->set_flashdata('message', 'Create Record Success');
+
+        } else if ($mode == "edit") {
             $data = array(
-                'client_id' => $this->input->post('client_id',TRUE),
-                'date_arrival' => $this->input->post('date_arrival',TRUE),
-                'time_arrival' => $this->input->post('time_arrival',TRUE),
-                'comments' => trim($this->input->post('comments',TRUE)),
+                'client_id' => $this->input->post('client_id', TRUE),
+                'date_arrival' => $this->input->post('date_arrival', TRUE),
+                'time_arrival' => $this->input->post('time_arrival', TRUE),
+                'comments' => trim($this->input->post('comments', TRUE)),
                 'user_updated' => $this->session->userdata('id_users'),
                 'date_updated' => $dt->format('Y-m-d H:i:s'),
-                );
+            );
     
             $this->Water_sample_reception_model->update($id, $data);
-            $this->session->set_flashdata('message', 'Create Record Success');    
+            $this->session->set_flashdata('message', 'Update Record Success');
         }
-
+    
         redirect(site_url("Water_sample_reception"));
     }
 
