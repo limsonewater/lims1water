@@ -44,9 +44,11 @@ class Water_sample_reception extends CI_Controller
     }
 
     public function subjson2() {
-        $id = $this->input->get('id2',TRUE);
+        $id2 = $this->input->get('id2',TRUE);
+        // log_message('debug', 'Received ID: ' . print_r($id, TRUE)); // Log received ID
+
         header('Content-Type: application/json');
-        echo $this->Water_sample_reception_model->subjson2($id);
+        echo $this->Water_sample_reception_model->subjson2($id2);
     }
 
     public function read($id)
@@ -80,7 +82,7 @@ class Water_sample_reception extends CI_Controller
                 $this->template->load('template','water_sample_reception/index_det2', $data);
         }
         else {
-            // $this->template->load('template','Water_sample_reception/index_det');
+            $this->template->load('template','Water_sample_reception/index_det');
         }
     }     
 
