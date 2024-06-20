@@ -3343,3 +3343,774 @@ INFO - 2024-06-20 06:44:20 --> Model Class Initialized
 INFO - 2024-06-20 06:44:20 --> Form Validation Class Initialized
 INFO - 2024-06-20 06:44:20 --> Final output sent to browser
 DEBUG - 2024-06-20 06:44:20 --> Total execution time: 0.0341
+INFO - 2024-06-20 08:37:05 --> Config Class Initialized
+INFO - 2024-06-20 08:37:05 --> Hooks Class Initialized
+DEBUG - 2024-06-20 08:37:05 --> UTF-8 Support Enabled
+INFO - 2024-06-20 08:37:05 --> Utf8 Class Initialized
+INFO - 2024-06-20 08:37:05 --> URI Class Initialized
+DEBUG - 2024-06-20 08:37:05 --> No URI present. Default controller set.
+INFO - 2024-06-20 08:37:05 --> Router Class Initialized
+INFO - 2024-06-20 08:37:05 --> Output Class Initialized
+INFO - 2024-06-20 08:37:05 --> Security Class Initialized
+DEBUG - 2024-06-20 08:37:05 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-06-20 08:37:05 --> Input Class Initialized
+INFO - 2024-06-20 08:37:05 --> Language Class Initialized
+INFO - 2024-06-20 08:37:05 --> Loader Class Initialized
+INFO - 2024-06-20 08:37:05 --> Helper loaded: url_helper
+INFO - 2024-06-20 08:37:05 --> Helper loaded: form_helper
+INFO - 2024-06-20 08:37:05 --> Helper loaded: racode_helper
+INFO - 2024-06-20 08:37:05 --> Database Driver Class Initialized
+DEBUG - 2024-06-20 08:37:05 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-06-20 08:37:05 --> Session: Class initialized using 'files' driver.
+INFO - 2024-06-20 08:37:05 --> Controller Class Initialized
+ERROR - 2024-06-20 08:37:05 --> Severity: Notice --> Trying to access array offset on value of type null C:\laragon\www\lims1water\application\helpers\racode_helper.php 57
+INFO - 2024-06-20 08:37:05 --> Config Class Initialized
+INFO - 2024-06-20 08:37:05 --> Hooks Class Initialized
+DEBUG - 2024-06-20 08:37:05 --> UTF-8 Support Enabled
+INFO - 2024-06-20 08:37:05 --> Utf8 Class Initialized
+INFO - 2024-06-20 08:37:05 --> URI Class Initialized
+INFO - 2024-06-20 08:37:05 --> Router Class Initialized
+INFO - 2024-06-20 08:37:05 --> Output Class Initialized
+INFO - 2024-06-20 08:37:05 --> Security Class Initialized
+DEBUG - 2024-06-20 08:37:05 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-06-20 08:37:05 --> Input Class Initialized
+INFO - 2024-06-20 08:37:05 --> Language Class Initialized
+INFO - 2024-06-20 08:37:05 --> Loader Class Initialized
+INFO - 2024-06-20 08:37:05 --> Helper loaded: url_helper
+INFO - 2024-06-20 08:37:05 --> Helper loaded: form_helper
+INFO - 2024-06-20 08:37:05 --> Helper loaded: racode_helper
+INFO - 2024-06-20 08:37:05 --> Database Driver Class Initialized
+DEBUG - 2024-06-20 08:37:05 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-06-20 08:37:05 --> Session: Class initialized using 'files' driver.
+INFO - 2024-06-20 08:37:05 --> Controller Class Initialized
+INFO - 2024-06-20 08:37:05 --> File loaded: C:\laragon\www\lims1water\application\views\auth/login.php
+INFO - 2024-06-20 08:37:05 --> Final output sent to browser
+DEBUG - 2024-06-20 08:37:05 --> Total execution time: 0.0614
+INFO - 2024-06-20 08:37:06 --> Config Class Initialized
+INFO - 2024-06-20 08:37:06 --> Hooks Class Initialized
+DEBUG - 2024-06-20 08:37:06 --> UTF-8 Support Enabled
+INFO - 2024-06-20 08:37:06 --> Utf8 Class Initialized
+INFO - 2024-06-20 08:37:06 --> URI Class Initialized
+INFO - 2024-06-20 08:37:06 --> Router Class Initialized
+INFO - 2024-06-20 08:37:06 --> Output Class Initialized
+INFO - 2024-06-20 08:37:06 --> Security Class Initialized
+DEBUG - 2024-06-20 08:37:06 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-06-20 08:37:06 --> Input Class Initialized
+INFO - 2024-06-20 08:37:06 --> Language Class Initialized
+INFO - 2024-06-20 08:37:06 --> Loader Class Initialized
+INFO - 2024-06-20 08:37:06 --> Helper loaded: url_helper
+INFO - 2024-06-20 08:37:06 --> Helper loaded: form_helper
+INFO - 2024-06-20 08:37:06 --> Helper loaded: racode_helper
+INFO - 2024-06-20 08:37:06 --> Database Driver Class Initialized
+DEBUG - 2024-06-20 08:37:07 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-06-20 08:37:07 --> Session: Class initialized using 'files' driver.
+INFO - 2024-06-20 08:37:07 --> Controller Class Initialized
+INFO - 2024-06-20 08:37:07 --> Model Class Initialized
+INFO - 2024-06-20 08:37:07 --> Final output sent to browser
+DEBUG - 2024-06-20 08:37:07 --> Total execution time: 0.0993
+INFO - 2024-06-20 08:37:38 --> Config Class Initialized
+INFO - 2024-06-20 08:37:38 --> Hooks Class Initialized
+DEBUG - 2024-06-20 08:37:38 --> UTF-8 Support Enabled
+INFO - 2024-06-20 08:37:38 --> Utf8 Class Initialized
+INFO - 2024-06-20 08:37:38 --> URI Class Initialized
+INFO - 2024-06-20 08:37:38 --> Router Class Initialized
+INFO - 2024-06-20 08:37:38 --> Output Class Initialized
+INFO - 2024-06-20 08:37:38 --> Security Class Initialized
+DEBUG - 2024-06-20 08:37:38 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-06-20 08:37:38 --> Input Class Initialized
+INFO - 2024-06-20 08:37:38 --> Language Class Initialized
+INFO - 2024-06-20 08:37:38 --> Loader Class Initialized
+INFO - 2024-06-20 08:37:38 --> Helper loaded: url_helper
+INFO - 2024-06-20 08:37:38 --> Helper loaded: form_helper
+INFO - 2024-06-20 08:37:38 --> Helper loaded: racode_helper
+INFO - 2024-06-20 08:37:38 --> Database Driver Class Initialized
+DEBUG - 2024-06-20 08:37:38 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-06-20 08:37:38 --> Session: Class initialized using 'files' driver.
+INFO - 2024-06-20 08:37:38 --> Controller Class Initialized
+INFO - 2024-06-20 08:37:38 --> Config Class Initialized
+INFO - 2024-06-20 08:37:38 --> Hooks Class Initialized
+DEBUG - 2024-06-20 08:37:38 --> UTF-8 Support Enabled
+INFO - 2024-06-20 08:37:38 --> Utf8 Class Initialized
+INFO - 2024-06-20 08:37:38 --> URI Class Initialized
+INFO - 2024-06-20 08:37:38 --> Router Class Initialized
+INFO - 2024-06-20 08:37:38 --> Output Class Initialized
+INFO - 2024-06-20 08:37:38 --> Security Class Initialized
+DEBUG - 2024-06-20 08:37:38 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-06-20 08:37:38 --> Input Class Initialized
+INFO - 2024-06-20 08:37:38 --> Language Class Initialized
+INFO - 2024-06-20 08:37:38 --> Loader Class Initialized
+INFO - 2024-06-20 08:37:38 --> Helper loaded: url_helper
+INFO - 2024-06-20 08:37:38 --> Helper loaded: form_helper
+INFO - 2024-06-20 08:37:38 --> Helper loaded: racode_helper
+INFO - 2024-06-20 08:37:38 --> Database Driver Class Initialized
+DEBUG - 2024-06-20 08:37:38 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-06-20 08:37:38 --> Session: Class initialized using 'files' driver.
+INFO - 2024-06-20 08:37:38 --> Controller Class Initialized
+INFO - 2024-06-20 08:37:38 --> Model Class Initialized
+ERROR - 2024-06-20 08:37:38 --> Severity: Notice --> Undefined variable: item C:\laragon\www\lims1water\application\views\welcome.php 114
+ERROR - 2024-06-20 08:37:38 --> Severity: Warning --> Invalid argument supplied for foreach() C:\laragon\www\lims1water\application\views\welcome.php 114
+ERROR - 2024-06-20 08:37:38 --> Severity: Notice --> Undefined variable: obj C:\laragon\www\lims1water\application\views\welcome.php 138
+ERROR - 2024-06-20 08:37:38 --> Severity: Warning --> Invalid argument supplied for foreach() C:\laragon\www\lims1water\application\views\welcome.php 138
+ERROR - 2024-06-20 08:37:38 --> Severity: Notice --> Undefined variable: obj C:\laragon\www\lims1water\application\views\welcome.php 182
+ERROR - 2024-06-20 08:37:38 --> Severity: Warning --> Invalid argument supplied for foreach() C:\laragon\www\lims1water\application\views\welcome.php 182
+INFO - 2024-06-20 08:37:38 --> File loaded: C:\laragon\www\lims1water\application\views\welcome.php
+INFO - 2024-06-20 08:37:38 --> File loaded: C:\laragon\www\lims1water\application\views\template/sidebar.php
+INFO - 2024-06-20 08:37:38 --> File loaded: C:\laragon\www\lims1water\application\views\template.php
+INFO - 2024-06-20 08:37:38 --> Final output sent to browser
+DEBUG - 2024-06-20 08:37:38 --> Total execution time: 0.0975
+INFO - 2024-06-20 08:37:41 --> Config Class Initialized
+INFO - 2024-06-20 08:37:41 --> Hooks Class Initialized
+DEBUG - 2024-06-20 08:37:41 --> UTF-8 Support Enabled
+INFO - 2024-06-20 08:37:41 --> Utf8 Class Initialized
+INFO - 2024-06-20 08:37:41 --> URI Class Initialized
+INFO - 2024-06-20 08:37:41 --> Router Class Initialized
+INFO - 2024-06-20 08:37:41 --> Output Class Initialized
+INFO - 2024-06-20 08:37:41 --> Security Class Initialized
+DEBUG - 2024-06-20 08:37:41 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-06-20 08:37:41 --> Input Class Initialized
+INFO - 2024-06-20 08:37:41 --> Language Class Initialized
+INFO - 2024-06-20 08:37:41 --> Loader Class Initialized
+INFO - 2024-06-20 08:37:41 --> Helper loaded: url_helper
+INFO - 2024-06-20 08:37:41 --> Helper loaded: form_helper
+INFO - 2024-06-20 08:37:41 --> Helper loaded: racode_helper
+INFO - 2024-06-20 08:37:41 --> Database Driver Class Initialized
+DEBUG - 2024-06-20 08:37:41 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-06-20 08:37:41 --> Session: Class initialized using 'files' driver.
+INFO - 2024-06-20 08:37:41 --> Controller Class Initialized
+INFO - 2024-06-20 08:37:41 --> Model Class Initialized
+INFO - 2024-06-20 08:37:41 --> Form Validation Class Initialized
+ERROR - 2024-06-20 08:37:41 --> Severity: Notice --> Undefined variable: client_id C:\laragon\www\lims1water\application\views\water_sample_reception\index.php 74
+ERROR - 2024-06-20 08:37:41 --> Severity: Notice --> Undefined variable: client_id C:\laragon\www\lims1water\application\views\water_sample_reception\index.php 74
+INFO - 2024-06-20 08:37:41 --> File loaded: C:\laragon\www\lims1water\application\views\Water_sample_reception/index.php
+INFO - 2024-06-20 08:37:41 --> File loaded: C:\laragon\www\lims1water\application\views\template/sidebar.php
+INFO - 2024-06-20 08:37:41 --> File loaded: C:\laragon\www\lims1water\application\views\template.php
+INFO - 2024-06-20 08:37:41 --> Final output sent to browser
+DEBUG - 2024-06-20 08:37:41 --> Total execution time: 0.0920
+INFO - 2024-06-20 08:37:41 --> Config Class Initialized
+INFO - 2024-06-20 08:37:41 --> Hooks Class Initialized
+DEBUG - 2024-06-20 08:37:41 --> UTF-8 Support Enabled
+INFO - 2024-06-20 08:37:41 --> Utf8 Class Initialized
+INFO - 2024-06-20 08:37:41 --> URI Class Initialized
+INFO - 2024-06-20 08:37:41 --> Router Class Initialized
+INFO - 2024-06-20 08:37:41 --> Output Class Initialized
+INFO - 2024-06-20 08:37:41 --> Security Class Initialized
+DEBUG - 2024-06-20 08:37:41 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-06-20 08:37:41 --> Input Class Initialized
+INFO - 2024-06-20 08:37:41 --> Language Class Initialized
+INFO - 2024-06-20 08:37:41 --> Loader Class Initialized
+INFO - 2024-06-20 08:37:41 --> Helper loaded: url_helper
+INFO - 2024-06-20 08:37:41 --> Helper loaded: form_helper
+INFO - 2024-06-20 08:37:41 --> Helper loaded: racode_helper
+INFO - 2024-06-20 08:37:41 --> Database Driver Class Initialized
+DEBUG - 2024-06-20 08:37:41 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-06-20 08:37:41 --> Session: Class initialized using 'files' driver.
+INFO - 2024-06-20 08:37:41 --> Controller Class Initialized
+INFO - 2024-06-20 08:37:41 --> Model Class Initialized
+INFO - 2024-06-20 08:37:41 --> Form Validation Class Initialized
+INFO - 2024-06-20 08:37:41 --> Final output sent to browser
+DEBUG - 2024-06-20 08:37:41 --> Total execution time: 0.0682
+INFO - 2024-06-20 08:37:51 --> Config Class Initialized
+INFO - 2024-06-20 08:37:51 --> Hooks Class Initialized
+DEBUG - 2024-06-20 08:37:51 --> UTF-8 Support Enabled
+INFO - 2024-06-20 08:37:51 --> Utf8 Class Initialized
+INFO - 2024-06-20 08:37:51 --> URI Class Initialized
+INFO - 2024-06-20 08:37:51 --> Router Class Initialized
+INFO - 2024-06-20 08:37:51 --> Output Class Initialized
+INFO - 2024-06-20 08:37:51 --> Security Class Initialized
+DEBUG - 2024-06-20 08:37:51 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-06-20 08:37:51 --> Input Class Initialized
+INFO - 2024-06-20 08:37:51 --> Language Class Initialized
+INFO - 2024-06-20 08:37:51 --> Loader Class Initialized
+INFO - 2024-06-20 08:37:51 --> Helper loaded: url_helper
+INFO - 2024-06-20 08:37:51 --> Helper loaded: form_helper
+INFO - 2024-06-20 08:37:51 --> Helper loaded: racode_helper
+INFO - 2024-06-20 08:37:51 --> Database Driver Class Initialized
+DEBUG - 2024-06-20 08:37:51 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-06-20 08:37:51 --> Session: Class initialized using 'files' driver.
+INFO - 2024-06-20 08:37:51 --> Controller Class Initialized
+INFO - 2024-06-20 08:37:51 --> Model Class Initialized
+INFO - 2024-06-20 08:37:51 --> Form Validation Class Initialized
+INFO - 2024-06-20 08:37:51 --> Config Class Initialized
+INFO - 2024-06-20 08:37:51 --> Hooks Class Initialized
+DEBUG - 2024-06-20 08:37:51 --> UTF-8 Support Enabled
+INFO - 2024-06-20 08:37:51 --> Utf8 Class Initialized
+INFO - 2024-06-20 08:37:51 --> URI Class Initialized
+INFO - 2024-06-20 08:37:51 --> Router Class Initialized
+INFO - 2024-06-20 08:37:51 --> Output Class Initialized
+INFO - 2024-06-20 08:37:51 --> Security Class Initialized
+DEBUG - 2024-06-20 08:37:51 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-06-20 08:37:51 --> Input Class Initialized
+INFO - 2024-06-20 08:37:51 --> Language Class Initialized
+INFO - 2024-06-20 08:37:51 --> Loader Class Initialized
+INFO - 2024-06-20 08:37:51 --> Helper loaded: url_helper
+INFO - 2024-06-20 08:37:51 --> Helper loaded: form_helper
+INFO - 2024-06-20 08:37:51 --> Helper loaded: racode_helper
+INFO - 2024-06-20 08:37:51 --> Database Driver Class Initialized
+DEBUG - 2024-06-20 08:37:51 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-06-20 08:37:51 --> Session: Class initialized using 'files' driver.
+INFO - 2024-06-20 08:37:51 --> Controller Class Initialized
+INFO - 2024-06-20 08:37:51 --> Model Class Initialized
+INFO - 2024-06-20 08:37:51 --> Form Validation Class Initialized
+ERROR - 2024-06-20 08:37:51 --> Severity: Notice --> Undefined variable: client_id C:\laragon\www\lims1water\application\views\water_sample_reception\index.php 74
+ERROR - 2024-06-20 08:37:51 --> Severity: Notice --> Undefined variable: client_id C:\laragon\www\lims1water\application\views\water_sample_reception\index.php 74
+INFO - 2024-06-20 08:37:51 --> File loaded: C:\laragon\www\lims1water\application\views\Water_sample_reception/index.php
+INFO - 2024-06-20 08:37:51 --> File loaded: C:\laragon\www\lims1water\application\views\template/sidebar.php
+INFO - 2024-06-20 08:37:51 --> File loaded: C:\laragon\www\lims1water\application\views\template.php
+INFO - 2024-06-20 08:37:51 --> Final output sent to browser
+DEBUG - 2024-06-20 08:37:51 --> Total execution time: 0.0752
+INFO - 2024-06-20 08:37:51 --> Config Class Initialized
+INFO - 2024-06-20 08:37:51 --> Hooks Class Initialized
+DEBUG - 2024-06-20 08:37:51 --> UTF-8 Support Enabled
+INFO - 2024-06-20 08:37:51 --> Utf8 Class Initialized
+INFO - 2024-06-20 08:37:51 --> URI Class Initialized
+INFO - 2024-06-20 08:37:51 --> Router Class Initialized
+INFO - 2024-06-20 08:37:51 --> Output Class Initialized
+INFO - 2024-06-20 08:37:51 --> Security Class Initialized
+DEBUG - 2024-06-20 08:37:51 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-06-20 08:37:51 --> Input Class Initialized
+INFO - 2024-06-20 08:37:51 --> Language Class Initialized
+INFO - 2024-06-20 08:37:51 --> Loader Class Initialized
+INFO - 2024-06-20 08:37:51 --> Helper loaded: url_helper
+INFO - 2024-06-20 08:37:51 --> Helper loaded: form_helper
+INFO - 2024-06-20 08:37:51 --> Helper loaded: racode_helper
+INFO - 2024-06-20 08:37:51 --> Database Driver Class Initialized
+DEBUG - 2024-06-20 08:37:51 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-06-20 08:37:51 --> Session: Class initialized using 'files' driver.
+INFO - 2024-06-20 08:37:51 --> Controller Class Initialized
+INFO - 2024-06-20 08:37:51 --> Model Class Initialized
+INFO - 2024-06-20 08:37:51 --> Form Validation Class Initialized
+INFO - 2024-06-20 08:37:51 --> Final output sent to browser
+DEBUG - 2024-06-20 08:37:51 --> Total execution time: 0.0895
+INFO - 2024-06-20 08:37:57 --> Config Class Initialized
+INFO - 2024-06-20 08:37:57 --> Hooks Class Initialized
+DEBUG - 2024-06-20 08:37:57 --> UTF-8 Support Enabled
+INFO - 2024-06-20 08:37:57 --> Utf8 Class Initialized
+INFO - 2024-06-20 08:37:57 --> URI Class Initialized
+INFO - 2024-06-20 08:37:57 --> Router Class Initialized
+INFO - 2024-06-20 08:37:57 --> Output Class Initialized
+INFO - 2024-06-20 08:37:57 --> Security Class Initialized
+DEBUG - 2024-06-20 08:37:57 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-06-20 08:37:57 --> Input Class Initialized
+INFO - 2024-06-20 08:37:57 --> Language Class Initialized
+INFO - 2024-06-20 08:37:57 --> Loader Class Initialized
+INFO - 2024-06-20 08:37:57 --> Helper loaded: url_helper
+INFO - 2024-06-20 08:37:58 --> Helper loaded: form_helper
+INFO - 2024-06-20 08:37:58 --> Helper loaded: racode_helper
+INFO - 2024-06-20 08:37:58 --> Database Driver Class Initialized
+DEBUG - 2024-06-20 08:37:58 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-06-20 08:37:58 --> Session: Class initialized using 'files' driver.
+INFO - 2024-06-20 08:37:58 --> Controller Class Initialized
+INFO - 2024-06-20 08:37:58 --> Model Class Initialized
+INFO - 2024-06-20 08:37:58 --> Form Validation Class Initialized
+INFO - 2024-06-20 08:37:58 --> File loaded: C:\laragon\www\lims1water\application\views\water_sample_reception/index_det.php
+INFO - 2024-06-20 08:37:58 --> File loaded: C:\laragon\www\lims1water\application\views\template/sidebar.php
+INFO - 2024-06-20 08:37:58 --> File loaded: C:\laragon\www\lims1water\application\views\template.php
+INFO - 2024-06-20 08:37:58 --> Final output sent to browser
+DEBUG - 2024-06-20 08:37:58 --> Total execution time: 0.0716
+INFO - 2024-06-20 08:37:58 --> Config Class Initialized
+INFO - 2024-06-20 08:37:58 --> Hooks Class Initialized
+DEBUG - 2024-06-20 08:37:58 --> UTF-8 Support Enabled
+INFO - 2024-06-20 08:37:58 --> Utf8 Class Initialized
+INFO - 2024-06-20 08:37:58 --> URI Class Initialized
+INFO - 2024-06-20 08:37:58 --> Router Class Initialized
+INFO - 2024-06-20 08:37:58 --> Output Class Initialized
+INFO - 2024-06-20 08:37:58 --> Security Class Initialized
+DEBUG - 2024-06-20 08:37:58 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-06-20 08:37:58 --> Input Class Initialized
+INFO - 2024-06-20 08:37:58 --> Language Class Initialized
+ERROR - 2024-06-20 08:37:58 --> 404 Page Not Found: Water_sample_reception/img
+INFO - 2024-06-20 08:37:58 --> Config Class Initialized
+INFO - 2024-06-20 08:37:58 --> Hooks Class Initialized
+DEBUG - 2024-06-20 08:37:58 --> UTF-8 Support Enabled
+INFO - 2024-06-20 08:37:58 --> Utf8 Class Initialized
+INFO - 2024-06-20 08:37:58 --> URI Class Initialized
+INFO - 2024-06-20 08:37:58 --> Router Class Initialized
+INFO - 2024-06-20 08:37:58 --> Output Class Initialized
+INFO - 2024-06-20 08:37:58 --> Security Class Initialized
+DEBUG - 2024-06-20 08:37:58 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-06-20 08:37:58 --> Input Class Initialized
+INFO - 2024-06-20 08:37:58 --> Language Class Initialized
+INFO - 2024-06-20 08:37:58 --> Loader Class Initialized
+INFO - 2024-06-20 08:37:58 --> Helper loaded: url_helper
+INFO - 2024-06-20 08:37:58 --> Helper loaded: form_helper
+INFO - 2024-06-20 08:37:58 --> Helper loaded: racode_helper
+INFO - 2024-06-20 08:37:58 --> Database Driver Class Initialized
+DEBUG - 2024-06-20 08:37:58 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-06-20 08:37:58 --> Session: Class initialized using 'files' driver.
+INFO - 2024-06-20 08:37:58 --> Controller Class Initialized
+INFO - 2024-06-20 08:37:58 --> Model Class Initialized
+INFO - 2024-06-20 08:37:58 --> Form Validation Class Initialized
+INFO - 2024-06-20 08:37:58 --> Final output sent to browser
+DEBUG - 2024-06-20 08:37:58 --> Total execution time: 0.0700
+INFO - 2024-06-20 08:38:00 --> Config Class Initialized
+INFO - 2024-06-20 08:38:00 --> Hooks Class Initialized
+DEBUG - 2024-06-20 08:38:00 --> UTF-8 Support Enabled
+INFO - 2024-06-20 08:38:00 --> Utf8 Class Initialized
+INFO - 2024-06-20 08:38:00 --> URI Class Initialized
+INFO - 2024-06-20 08:38:00 --> Router Class Initialized
+INFO - 2024-06-20 08:38:00 --> Output Class Initialized
+INFO - 2024-06-20 08:38:00 --> Security Class Initialized
+DEBUG - 2024-06-20 08:38:00 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-06-20 08:38:00 --> Input Class Initialized
+INFO - 2024-06-20 08:38:00 --> Language Class Initialized
+INFO - 2024-06-20 08:38:00 --> Loader Class Initialized
+INFO - 2024-06-20 08:38:00 --> Helper loaded: url_helper
+INFO - 2024-06-20 08:38:00 --> Helper loaded: form_helper
+INFO - 2024-06-20 08:38:00 --> Helper loaded: racode_helper
+INFO - 2024-06-20 08:38:00 --> Database Driver Class Initialized
+DEBUG - 2024-06-20 08:38:00 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-06-20 08:38:00 --> Session: Class initialized using 'files' driver.
+INFO - 2024-06-20 08:38:00 --> Controller Class Initialized
+INFO - 2024-06-20 08:38:00 --> Model Class Initialized
+INFO - 2024-06-20 08:38:00 --> Form Validation Class Initialized
+ERROR - 2024-06-20 08:38:00 --> Severity: Notice --> Undefined variable: client_id C:\laragon\www\lims1water\application\views\water_sample_reception\index.php 74
+ERROR - 2024-06-20 08:38:00 --> Severity: Notice --> Undefined variable: client_id C:\laragon\www\lims1water\application\views\water_sample_reception\index.php 74
+INFO - 2024-06-20 08:38:00 --> File loaded: C:\laragon\www\lims1water\application\views\Water_sample_reception/index.php
+INFO - 2024-06-20 08:38:00 --> File loaded: C:\laragon\www\lims1water\application\views\template/sidebar.php
+INFO - 2024-06-20 08:38:00 --> File loaded: C:\laragon\www\lims1water\application\views\template.php
+INFO - 2024-06-20 08:38:00 --> Final output sent to browser
+DEBUG - 2024-06-20 08:38:00 --> Total execution time: 0.0702
+INFO - 2024-06-20 08:38:00 --> Config Class Initialized
+INFO - 2024-06-20 08:38:00 --> Hooks Class Initialized
+DEBUG - 2024-06-20 08:38:00 --> UTF-8 Support Enabled
+INFO - 2024-06-20 08:38:00 --> Utf8 Class Initialized
+INFO - 2024-06-20 08:38:00 --> URI Class Initialized
+INFO - 2024-06-20 08:38:00 --> Router Class Initialized
+INFO - 2024-06-20 08:38:00 --> Output Class Initialized
+INFO - 2024-06-20 08:38:00 --> Security Class Initialized
+DEBUG - 2024-06-20 08:38:00 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-06-20 08:38:00 --> Input Class Initialized
+INFO - 2024-06-20 08:38:00 --> Language Class Initialized
+INFO - 2024-06-20 08:38:00 --> Loader Class Initialized
+INFO - 2024-06-20 08:38:00 --> Helper loaded: url_helper
+INFO - 2024-06-20 08:38:00 --> Helper loaded: form_helper
+INFO - 2024-06-20 08:38:00 --> Helper loaded: racode_helper
+INFO - 2024-06-20 08:38:00 --> Database Driver Class Initialized
+DEBUG - 2024-06-20 08:38:00 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-06-20 08:38:00 --> Session: Class initialized using 'files' driver.
+INFO - 2024-06-20 08:38:00 --> Controller Class Initialized
+INFO - 2024-06-20 08:38:00 --> Model Class Initialized
+INFO - 2024-06-20 08:38:00 --> Form Validation Class Initialized
+INFO - 2024-06-20 08:38:00 --> Final output sent to browser
+DEBUG - 2024-06-20 08:38:00 --> Total execution time: 0.0793
+INFO - 2024-06-20 08:38:01 --> Config Class Initialized
+INFO - 2024-06-20 08:38:01 --> Hooks Class Initialized
+DEBUG - 2024-06-20 08:38:01 --> UTF-8 Support Enabled
+INFO - 2024-06-20 08:38:01 --> Utf8 Class Initialized
+INFO - 2024-06-20 08:38:01 --> URI Class Initialized
+INFO - 2024-06-20 08:38:01 --> Router Class Initialized
+INFO - 2024-06-20 08:38:01 --> Output Class Initialized
+INFO - 2024-06-20 08:38:01 --> Security Class Initialized
+DEBUG - 2024-06-20 08:38:01 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-06-20 08:38:01 --> Input Class Initialized
+INFO - 2024-06-20 08:38:01 --> Language Class Initialized
+INFO - 2024-06-20 08:38:01 --> Loader Class Initialized
+INFO - 2024-06-20 08:38:01 --> Helper loaded: url_helper
+INFO - 2024-06-20 08:38:01 --> Helper loaded: form_helper
+INFO - 2024-06-20 08:38:01 --> Helper loaded: racode_helper
+INFO - 2024-06-20 08:38:01 --> Database Driver Class Initialized
+DEBUG - 2024-06-20 08:38:01 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-06-20 08:38:01 --> Session: Class initialized using 'files' driver.
+INFO - 2024-06-20 08:38:01 --> Controller Class Initialized
+INFO - 2024-06-20 08:38:01 --> Model Class Initialized
+INFO - 2024-06-20 08:38:01 --> Form Validation Class Initialized
+INFO - 2024-06-20 08:38:01 --> File loaded: C:\laragon\www\lims1water\application\views\water_sample_reception/index_det.php
+INFO - 2024-06-20 08:38:01 --> File loaded: C:\laragon\www\lims1water\application\views\template/sidebar.php
+INFO - 2024-06-20 08:38:01 --> File loaded: C:\laragon\www\lims1water\application\views\template.php
+INFO - 2024-06-20 08:38:01 --> Final output sent to browser
+DEBUG - 2024-06-20 08:38:01 --> Total execution time: 0.0693
+INFO - 2024-06-20 08:38:01 --> Config Class Initialized
+INFO - 2024-06-20 08:38:01 --> Hooks Class Initialized
+DEBUG - 2024-06-20 08:38:01 --> UTF-8 Support Enabled
+INFO - 2024-06-20 08:38:01 --> Utf8 Class Initialized
+INFO - 2024-06-20 08:38:01 --> URI Class Initialized
+INFO - 2024-06-20 08:38:01 --> Router Class Initialized
+INFO - 2024-06-20 08:38:01 --> Output Class Initialized
+INFO - 2024-06-20 08:38:01 --> Security Class Initialized
+DEBUG - 2024-06-20 08:38:01 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-06-20 08:38:01 --> Input Class Initialized
+INFO - 2024-06-20 08:38:01 --> Language Class Initialized
+ERROR - 2024-06-20 08:38:01 --> 404 Page Not Found: Water_sample_reception/img
+INFO - 2024-06-20 08:38:01 --> Config Class Initialized
+INFO - 2024-06-20 08:38:01 --> Hooks Class Initialized
+DEBUG - 2024-06-20 08:38:01 --> UTF-8 Support Enabled
+INFO - 2024-06-20 08:38:01 --> Utf8 Class Initialized
+INFO - 2024-06-20 08:38:01 --> URI Class Initialized
+INFO - 2024-06-20 08:38:01 --> Router Class Initialized
+INFO - 2024-06-20 08:38:01 --> Output Class Initialized
+INFO - 2024-06-20 08:38:01 --> Security Class Initialized
+DEBUG - 2024-06-20 08:38:01 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-06-20 08:38:01 --> Input Class Initialized
+INFO - 2024-06-20 08:38:01 --> Language Class Initialized
+INFO - 2024-06-20 08:38:01 --> Loader Class Initialized
+INFO - 2024-06-20 08:38:01 --> Helper loaded: url_helper
+INFO - 2024-06-20 08:38:01 --> Helper loaded: form_helper
+INFO - 2024-06-20 08:38:01 --> Helper loaded: racode_helper
+INFO - 2024-06-20 08:38:01 --> Database Driver Class Initialized
+DEBUG - 2024-06-20 08:38:01 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-06-20 08:38:01 --> Session: Class initialized using 'files' driver.
+INFO - 2024-06-20 08:38:01 --> Controller Class Initialized
+INFO - 2024-06-20 08:38:01 --> Model Class Initialized
+INFO - 2024-06-20 08:38:01 --> Form Validation Class Initialized
+INFO - 2024-06-20 08:38:01 --> Final output sent to browser
+DEBUG - 2024-06-20 08:38:01 --> Total execution time: 0.0641
+INFO - 2024-06-20 08:38:04 --> Config Class Initialized
+INFO - 2024-06-20 08:38:04 --> Hooks Class Initialized
+DEBUG - 2024-06-20 08:38:04 --> UTF-8 Support Enabled
+INFO - 2024-06-20 08:38:04 --> Utf8 Class Initialized
+INFO - 2024-06-20 08:38:04 --> URI Class Initialized
+INFO - 2024-06-20 08:38:04 --> Router Class Initialized
+INFO - 2024-06-20 08:38:04 --> Output Class Initialized
+INFO - 2024-06-20 08:38:04 --> Security Class Initialized
+DEBUG - 2024-06-20 08:38:04 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-06-20 08:38:04 --> Input Class Initialized
+INFO - 2024-06-20 08:38:04 --> Language Class Initialized
+INFO - 2024-06-20 08:38:04 --> Loader Class Initialized
+INFO - 2024-06-20 08:38:04 --> Helper loaded: url_helper
+INFO - 2024-06-20 08:38:04 --> Helper loaded: form_helper
+INFO - 2024-06-20 08:38:04 --> Helper loaded: racode_helper
+INFO - 2024-06-20 08:38:04 --> Database Driver Class Initialized
+DEBUG - 2024-06-20 08:38:04 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-06-20 08:38:04 --> Session: Class initialized using 'files' driver.
+INFO - 2024-06-20 08:38:04 --> Controller Class Initialized
+INFO - 2024-06-20 08:38:04 --> Model Class Initialized
+INFO - 2024-06-20 08:38:04 --> Form Validation Class Initialized
+ERROR - 2024-06-20 08:38:04 --> Severity: Notice --> Undefined variable: client_id C:\laragon\www\lims1water\application\views\water_sample_reception\index.php 74
+ERROR - 2024-06-20 08:38:04 --> Severity: Notice --> Undefined variable: client_id C:\laragon\www\lims1water\application\views\water_sample_reception\index.php 74
+INFO - 2024-06-20 08:38:04 --> File loaded: C:\laragon\www\lims1water\application\views\Water_sample_reception/index.php
+INFO - 2024-06-20 08:38:04 --> File loaded: C:\laragon\www\lims1water\application\views\template/sidebar.php
+INFO - 2024-06-20 08:38:04 --> File loaded: C:\laragon\www\lims1water\application\views\template.php
+INFO - 2024-06-20 08:38:04 --> Final output sent to browser
+DEBUG - 2024-06-20 08:38:04 --> Total execution time: 0.0718
+INFO - 2024-06-20 08:38:04 --> Config Class Initialized
+INFO - 2024-06-20 08:38:04 --> Hooks Class Initialized
+DEBUG - 2024-06-20 08:38:04 --> UTF-8 Support Enabled
+INFO - 2024-06-20 08:38:04 --> Utf8 Class Initialized
+INFO - 2024-06-20 08:38:04 --> URI Class Initialized
+INFO - 2024-06-20 08:38:04 --> Router Class Initialized
+INFO - 2024-06-20 08:38:04 --> Output Class Initialized
+INFO - 2024-06-20 08:38:04 --> Security Class Initialized
+DEBUG - 2024-06-20 08:38:04 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-06-20 08:38:04 --> Input Class Initialized
+INFO - 2024-06-20 08:38:04 --> Language Class Initialized
+INFO - 2024-06-20 08:38:04 --> Loader Class Initialized
+INFO - 2024-06-20 08:38:04 --> Helper loaded: url_helper
+INFO - 2024-06-20 08:38:04 --> Helper loaded: form_helper
+INFO - 2024-06-20 08:38:04 --> Helper loaded: racode_helper
+INFO - 2024-06-20 08:38:04 --> Database Driver Class Initialized
+DEBUG - 2024-06-20 08:38:04 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-06-20 08:38:04 --> Session: Class initialized using 'files' driver.
+INFO - 2024-06-20 08:38:04 --> Controller Class Initialized
+INFO - 2024-06-20 08:38:04 --> Model Class Initialized
+INFO - 2024-06-20 08:38:04 --> Form Validation Class Initialized
+INFO - 2024-06-20 08:38:04 --> Final output sent to browser
+DEBUG - 2024-06-20 08:38:04 --> Total execution time: 0.0658
+INFO - 2024-06-20 08:39:03 --> Config Class Initialized
+INFO - 2024-06-20 08:39:03 --> Hooks Class Initialized
+DEBUG - 2024-06-20 08:39:03 --> UTF-8 Support Enabled
+INFO - 2024-06-20 08:39:03 --> Utf8 Class Initialized
+INFO - 2024-06-20 08:39:03 --> URI Class Initialized
+INFO - 2024-06-20 08:39:03 --> Router Class Initialized
+INFO - 2024-06-20 08:39:03 --> Output Class Initialized
+INFO - 2024-06-20 08:39:03 --> Security Class Initialized
+DEBUG - 2024-06-20 08:39:03 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-06-20 08:39:03 --> Input Class Initialized
+INFO - 2024-06-20 08:39:03 --> Language Class Initialized
+INFO - 2024-06-20 08:39:03 --> Loader Class Initialized
+INFO - 2024-06-20 08:39:03 --> Helper loaded: url_helper
+INFO - 2024-06-20 08:39:03 --> Helper loaded: form_helper
+INFO - 2024-06-20 08:39:03 --> Helper loaded: racode_helper
+INFO - 2024-06-20 08:39:03 --> Database Driver Class Initialized
+DEBUG - 2024-06-20 08:39:03 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-06-20 08:39:03 --> Session: Class initialized using 'files' driver.
+INFO - 2024-06-20 08:39:03 --> Controller Class Initialized
+INFO - 2024-06-20 08:39:03 --> Model Class Initialized
+INFO - 2024-06-20 08:39:03 --> Form Validation Class Initialized
+INFO - 2024-06-20 08:39:03 --> Config Class Initialized
+INFO - 2024-06-20 08:39:03 --> Hooks Class Initialized
+DEBUG - 2024-06-20 08:39:03 --> UTF-8 Support Enabled
+INFO - 2024-06-20 08:39:03 --> Utf8 Class Initialized
+INFO - 2024-06-20 08:39:03 --> URI Class Initialized
+INFO - 2024-06-20 08:39:03 --> Router Class Initialized
+INFO - 2024-06-20 08:39:03 --> Output Class Initialized
+INFO - 2024-06-20 08:39:03 --> Security Class Initialized
+DEBUG - 2024-06-20 08:39:03 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-06-20 08:39:03 --> Input Class Initialized
+INFO - 2024-06-20 08:39:03 --> Language Class Initialized
+INFO - 2024-06-20 08:39:03 --> Loader Class Initialized
+INFO - 2024-06-20 08:39:03 --> Helper loaded: url_helper
+INFO - 2024-06-20 08:39:03 --> Helper loaded: form_helper
+INFO - 2024-06-20 08:39:03 --> Helper loaded: racode_helper
+INFO - 2024-06-20 08:39:03 --> Database Driver Class Initialized
+DEBUG - 2024-06-20 08:39:03 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-06-20 08:39:03 --> Session: Class initialized using 'files' driver.
+INFO - 2024-06-20 08:39:03 --> Controller Class Initialized
+INFO - 2024-06-20 08:39:03 --> Model Class Initialized
+INFO - 2024-06-20 08:39:03 --> Form Validation Class Initialized
+ERROR - 2024-06-20 08:39:03 --> Severity: Notice --> Undefined variable: client_id C:\laragon\www\lims1water\application\views\water_sample_reception\index.php 74
+ERROR - 2024-06-20 08:39:03 --> Severity: Notice --> Undefined variable: client_id C:\laragon\www\lims1water\application\views\water_sample_reception\index.php 74
+INFO - 2024-06-20 08:39:03 --> File loaded: C:\laragon\www\lims1water\application\views\Water_sample_reception/index.php
+INFO - 2024-06-20 08:39:03 --> File loaded: C:\laragon\www\lims1water\application\views\template/sidebar.php
+INFO - 2024-06-20 08:39:03 --> File loaded: C:\laragon\www\lims1water\application\views\template.php
+INFO - 2024-06-20 08:39:03 --> Final output sent to browser
+DEBUG - 2024-06-20 08:39:03 --> Total execution time: 0.0677
+INFO - 2024-06-20 08:39:03 --> Config Class Initialized
+INFO - 2024-06-20 08:39:03 --> Hooks Class Initialized
+DEBUG - 2024-06-20 08:39:03 --> UTF-8 Support Enabled
+INFO - 2024-06-20 08:39:03 --> Utf8 Class Initialized
+INFO - 2024-06-20 08:39:03 --> URI Class Initialized
+INFO - 2024-06-20 08:39:03 --> Router Class Initialized
+INFO - 2024-06-20 08:39:03 --> Output Class Initialized
+INFO - 2024-06-20 08:39:03 --> Security Class Initialized
+DEBUG - 2024-06-20 08:39:03 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-06-20 08:39:03 --> Input Class Initialized
+INFO - 2024-06-20 08:39:03 --> Language Class Initialized
+INFO - 2024-06-20 08:39:03 --> Loader Class Initialized
+INFO - 2024-06-20 08:39:03 --> Helper loaded: url_helper
+INFO - 2024-06-20 08:39:03 --> Helper loaded: form_helper
+INFO - 2024-06-20 08:39:03 --> Helper loaded: racode_helper
+INFO - 2024-06-20 08:39:03 --> Database Driver Class Initialized
+DEBUG - 2024-06-20 08:39:03 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-06-20 08:39:03 --> Session: Class initialized using 'files' driver.
+INFO - 2024-06-20 08:39:03 --> Controller Class Initialized
+INFO - 2024-06-20 08:39:03 --> Model Class Initialized
+INFO - 2024-06-20 08:39:03 --> Form Validation Class Initialized
+INFO - 2024-06-20 08:39:03 --> Final output sent to browser
+DEBUG - 2024-06-20 08:39:03 --> Total execution time: 0.0749
+INFO - 2024-06-20 08:39:56 --> Config Class Initialized
+INFO - 2024-06-20 08:39:56 --> Hooks Class Initialized
+DEBUG - 2024-06-20 08:39:56 --> UTF-8 Support Enabled
+INFO - 2024-06-20 08:39:56 --> Utf8 Class Initialized
+INFO - 2024-06-20 08:39:56 --> URI Class Initialized
+INFO - 2024-06-20 08:39:56 --> Router Class Initialized
+INFO - 2024-06-20 08:39:56 --> Output Class Initialized
+INFO - 2024-06-20 08:39:56 --> Security Class Initialized
+DEBUG - 2024-06-20 08:39:56 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-06-20 08:39:56 --> Input Class Initialized
+INFO - 2024-06-20 08:39:56 --> Language Class Initialized
+INFO - 2024-06-20 08:39:56 --> Loader Class Initialized
+INFO - 2024-06-20 08:39:56 --> Helper loaded: url_helper
+INFO - 2024-06-20 08:39:56 --> Helper loaded: form_helper
+INFO - 2024-06-20 08:39:56 --> Helper loaded: racode_helper
+INFO - 2024-06-20 08:39:57 --> Database Driver Class Initialized
+DEBUG - 2024-06-20 08:39:57 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-06-20 08:39:57 --> Session: Class initialized using 'files' driver.
+INFO - 2024-06-20 08:39:57 --> Controller Class Initialized
+INFO - 2024-06-20 08:39:57 --> Model Class Initialized
+INFO - 2024-06-20 08:39:57 --> Form Validation Class Initialized
+INFO - 2024-06-20 08:39:57 --> File loaded: C:\laragon\www\lims1water\application\views\water_sample_reception/index_det.php
+INFO - 2024-06-20 08:39:57 --> File loaded: C:\laragon\www\lims1water\application\views\template/sidebar.php
+INFO - 2024-06-20 08:39:57 --> File loaded: C:\laragon\www\lims1water\application\views\template.php
+INFO - 2024-06-20 08:39:57 --> Final output sent to browser
+DEBUG - 2024-06-20 08:39:57 --> Total execution time: 0.0777
+INFO - 2024-06-20 08:39:57 --> Config Class Initialized
+INFO - 2024-06-20 08:39:57 --> Hooks Class Initialized
+DEBUG - 2024-06-20 08:39:57 --> UTF-8 Support Enabled
+INFO - 2024-06-20 08:39:57 --> Utf8 Class Initialized
+INFO - 2024-06-20 08:39:57 --> URI Class Initialized
+INFO - 2024-06-20 08:39:57 --> Router Class Initialized
+INFO - 2024-06-20 08:39:57 --> Output Class Initialized
+INFO - 2024-06-20 08:39:57 --> Security Class Initialized
+DEBUG - 2024-06-20 08:39:57 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-06-20 08:39:57 --> Input Class Initialized
+INFO - 2024-06-20 08:39:57 --> Language Class Initialized
+ERROR - 2024-06-20 08:39:57 --> 404 Page Not Found: Water_sample_reception/img
+INFO - 2024-06-20 08:39:57 --> Config Class Initialized
+INFO - 2024-06-20 08:39:57 --> Hooks Class Initialized
+DEBUG - 2024-06-20 08:39:57 --> UTF-8 Support Enabled
+INFO - 2024-06-20 08:39:57 --> Utf8 Class Initialized
+INFO - 2024-06-20 08:39:57 --> URI Class Initialized
+INFO - 2024-06-20 08:39:57 --> Router Class Initialized
+INFO - 2024-06-20 08:39:57 --> Output Class Initialized
+INFO - 2024-06-20 08:39:57 --> Security Class Initialized
+DEBUG - 2024-06-20 08:39:57 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-06-20 08:39:57 --> Input Class Initialized
+INFO - 2024-06-20 08:39:57 --> Language Class Initialized
+INFO - 2024-06-20 08:39:57 --> Loader Class Initialized
+INFO - 2024-06-20 08:39:57 --> Helper loaded: url_helper
+INFO - 2024-06-20 08:39:57 --> Helper loaded: form_helper
+INFO - 2024-06-20 08:39:57 --> Helper loaded: racode_helper
+INFO - 2024-06-20 08:39:57 --> Database Driver Class Initialized
+DEBUG - 2024-06-20 08:39:57 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-06-20 08:39:57 --> Session: Class initialized using 'files' driver.
+INFO - 2024-06-20 08:39:57 --> Controller Class Initialized
+INFO - 2024-06-20 08:39:57 --> Model Class Initialized
+INFO - 2024-06-20 08:39:57 --> Form Validation Class Initialized
+INFO - 2024-06-20 08:39:57 --> Final output sent to browser
+DEBUG - 2024-06-20 08:39:57 --> Total execution time: 0.0898
+INFO - 2024-06-20 08:40:04 --> Config Class Initialized
+INFO - 2024-06-20 08:40:04 --> Hooks Class Initialized
+DEBUG - 2024-06-20 08:40:04 --> UTF-8 Support Enabled
+INFO - 2024-06-20 08:40:04 --> Utf8 Class Initialized
+INFO - 2024-06-20 08:40:04 --> URI Class Initialized
+INFO - 2024-06-20 08:40:04 --> Router Class Initialized
+INFO - 2024-06-20 08:40:04 --> Output Class Initialized
+INFO - 2024-06-20 08:40:04 --> Security Class Initialized
+DEBUG - 2024-06-20 08:40:04 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-06-20 08:40:04 --> Input Class Initialized
+INFO - 2024-06-20 08:40:04 --> Language Class Initialized
+INFO - 2024-06-20 08:40:04 --> Loader Class Initialized
+INFO - 2024-06-20 08:40:04 --> Helper loaded: url_helper
+INFO - 2024-06-20 08:40:04 --> Helper loaded: form_helper
+INFO - 2024-06-20 08:40:04 --> Helper loaded: racode_helper
+INFO - 2024-06-20 08:40:04 --> Database Driver Class Initialized
+DEBUG - 2024-06-20 08:40:04 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-06-20 08:40:04 --> Session: Class initialized using 'files' driver.
+INFO - 2024-06-20 08:40:04 --> Controller Class Initialized
+INFO - 2024-06-20 08:40:04 --> Model Class Initialized
+INFO - 2024-06-20 08:40:04 --> Form Validation Class Initialized
+ERROR - 2024-06-20 08:40:04 --> Severity: Notice --> Undefined variable: client_id C:\laragon\www\lims1water\application\views\water_sample_reception\index.php 74
+ERROR - 2024-06-20 08:40:04 --> Severity: Notice --> Undefined variable: client_id C:\laragon\www\lims1water\application\views\water_sample_reception\index.php 74
+INFO - 2024-06-20 08:40:04 --> File loaded: C:\laragon\www\lims1water\application\views\Water_sample_reception/index.php
+INFO - 2024-06-20 08:40:04 --> File loaded: C:\laragon\www\lims1water\application\views\template/sidebar.php
+INFO - 2024-06-20 08:40:04 --> File loaded: C:\laragon\www\lims1water\application\views\template.php
+INFO - 2024-06-20 08:40:04 --> Final output sent to browser
+DEBUG - 2024-06-20 08:40:04 --> Total execution time: 0.0762
+INFO - 2024-06-20 08:40:04 --> Config Class Initialized
+INFO - 2024-06-20 08:40:04 --> Hooks Class Initialized
+DEBUG - 2024-06-20 08:40:04 --> UTF-8 Support Enabled
+INFO - 2024-06-20 08:40:04 --> Utf8 Class Initialized
+INFO - 2024-06-20 08:40:04 --> URI Class Initialized
+INFO - 2024-06-20 08:40:04 --> Router Class Initialized
+INFO - 2024-06-20 08:40:04 --> Output Class Initialized
+INFO - 2024-06-20 08:40:04 --> Security Class Initialized
+DEBUG - 2024-06-20 08:40:04 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-06-20 08:40:04 --> Input Class Initialized
+INFO - 2024-06-20 08:40:04 --> Language Class Initialized
+INFO - 2024-06-20 08:40:04 --> Loader Class Initialized
+INFO - 2024-06-20 08:40:04 --> Helper loaded: url_helper
+INFO - 2024-06-20 08:40:04 --> Helper loaded: form_helper
+INFO - 2024-06-20 08:40:04 --> Helper loaded: racode_helper
+INFO - 2024-06-20 08:40:04 --> Database Driver Class Initialized
+DEBUG - 2024-06-20 08:40:04 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-06-20 08:40:04 --> Session: Class initialized using 'files' driver.
+INFO - 2024-06-20 08:40:04 --> Controller Class Initialized
+INFO - 2024-06-20 08:40:04 --> Model Class Initialized
+INFO - 2024-06-20 08:40:04 --> Form Validation Class Initialized
+INFO - 2024-06-20 08:40:04 --> Final output sent to browser
+DEBUG - 2024-06-20 08:40:04 --> Total execution time: 0.0667
+INFO - 2024-06-20 08:40:06 --> Config Class Initialized
+INFO - 2024-06-20 08:40:06 --> Hooks Class Initialized
+DEBUG - 2024-06-20 08:40:06 --> UTF-8 Support Enabled
+INFO - 2024-06-20 08:40:06 --> Utf8 Class Initialized
+INFO - 2024-06-20 08:40:06 --> URI Class Initialized
+INFO - 2024-06-20 08:40:06 --> Router Class Initialized
+INFO - 2024-06-20 08:40:06 --> Output Class Initialized
+INFO - 2024-06-20 08:40:06 --> Security Class Initialized
+DEBUG - 2024-06-20 08:40:06 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-06-20 08:40:06 --> Input Class Initialized
+INFO - 2024-06-20 08:40:06 --> Language Class Initialized
+INFO - 2024-06-20 08:40:06 --> Loader Class Initialized
+INFO - 2024-06-20 08:40:06 --> Helper loaded: url_helper
+INFO - 2024-06-20 08:40:06 --> Helper loaded: form_helper
+INFO - 2024-06-20 08:40:06 --> Helper loaded: racode_helper
+INFO - 2024-06-20 08:40:06 --> Database Driver Class Initialized
+DEBUG - 2024-06-20 08:40:06 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-06-20 08:40:06 --> Session: Class initialized using 'files' driver.
+INFO - 2024-06-20 08:40:06 --> Controller Class Initialized
+INFO - 2024-06-20 08:40:06 --> Model Class Initialized
+INFO - 2024-06-20 08:40:06 --> Form Validation Class Initialized
+INFO - 2024-06-20 08:40:06 --> File loaded: C:\laragon\www\lims1water\application\views\water_sample_reception/index_det.php
+INFO - 2024-06-20 08:40:06 --> File loaded: C:\laragon\www\lims1water\application\views\template/sidebar.php
+INFO - 2024-06-20 08:40:06 --> File loaded: C:\laragon\www\lims1water\application\views\template.php
+INFO - 2024-06-20 08:40:06 --> Final output sent to browser
+DEBUG - 2024-06-20 08:40:06 --> Total execution time: 0.0731
+INFO - 2024-06-20 08:40:06 --> Config Class Initialized
+INFO - 2024-06-20 08:40:06 --> Hooks Class Initialized
+DEBUG - 2024-06-20 08:40:06 --> UTF-8 Support Enabled
+INFO - 2024-06-20 08:40:06 --> Utf8 Class Initialized
+INFO - 2024-06-20 08:40:06 --> URI Class Initialized
+INFO - 2024-06-20 08:40:06 --> Router Class Initialized
+INFO - 2024-06-20 08:40:06 --> Output Class Initialized
+INFO - 2024-06-20 08:40:06 --> Security Class Initialized
+DEBUG - 2024-06-20 08:40:06 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-06-20 08:40:06 --> Input Class Initialized
+INFO - 2024-06-20 08:40:06 --> Language Class Initialized
+ERROR - 2024-06-20 08:40:06 --> 404 Page Not Found: Water_sample_reception/img
+INFO - 2024-06-20 08:40:06 --> Config Class Initialized
+INFO - 2024-06-20 08:40:06 --> Hooks Class Initialized
+DEBUG - 2024-06-20 08:40:06 --> UTF-8 Support Enabled
+INFO - 2024-06-20 08:40:06 --> Utf8 Class Initialized
+INFO - 2024-06-20 08:40:06 --> URI Class Initialized
+INFO - 2024-06-20 08:40:06 --> Router Class Initialized
+INFO - 2024-06-20 08:40:06 --> Output Class Initialized
+INFO - 2024-06-20 08:40:06 --> Security Class Initialized
+DEBUG - 2024-06-20 08:40:06 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-06-20 08:40:06 --> Input Class Initialized
+INFO - 2024-06-20 08:40:06 --> Language Class Initialized
+INFO - 2024-06-20 08:40:06 --> Loader Class Initialized
+INFO - 2024-06-20 08:40:06 --> Helper loaded: url_helper
+INFO - 2024-06-20 08:40:06 --> Helper loaded: form_helper
+INFO - 2024-06-20 08:40:06 --> Helper loaded: racode_helper
+INFO - 2024-06-20 08:40:06 --> Database Driver Class Initialized
+DEBUG - 2024-06-20 08:40:06 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-06-20 08:40:06 --> Session: Class initialized using 'files' driver.
+INFO - 2024-06-20 08:40:06 --> Controller Class Initialized
+INFO - 2024-06-20 08:40:06 --> Model Class Initialized
+INFO - 2024-06-20 08:40:06 --> Form Validation Class Initialized
+INFO - 2024-06-20 08:40:06 --> Final output sent to browser
+DEBUG - 2024-06-20 08:40:06 --> Total execution time: 0.0942
+INFO - 2024-06-20 08:40:11 --> Config Class Initialized
+INFO - 2024-06-20 08:40:11 --> Hooks Class Initialized
+DEBUG - 2024-06-20 08:40:11 --> UTF-8 Support Enabled
+INFO - 2024-06-20 08:40:11 --> Utf8 Class Initialized
+INFO - 2024-06-20 08:40:11 --> URI Class Initialized
+INFO - 2024-06-20 08:40:11 --> Router Class Initialized
+INFO - 2024-06-20 08:40:11 --> Output Class Initialized
+INFO - 2024-06-20 08:40:11 --> Security Class Initialized
+DEBUG - 2024-06-20 08:40:11 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-06-20 08:40:11 --> Input Class Initialized
+INFO - 2024-06-20 08:40:11 --> Language Class Initialized
+INFO - 2024-06-20 08:40:11 --> Loader Class Initialized
+INFO - 2024-06-20 08:40:11 --> Helper loaded: url_helper
+INFO - 2024-06-20 08:40:11 --> Helper loaded: form_helper
+INFO - 2024-06-20 08:40:11 --> Helper loaded: racode_helper
+INFO - 2024-06-20 08:40:11 --> Database Driver Class Initialized
+DEBUG - 2024-06-20 08:40:11 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-06-20 08:40:11 --> Session: Class initialized using 'files' driver.
+INFO - 2024-06-20 08:40:11 --> Controller Class Initialized
+INFO - 2024-06-20 08:40:11 --> Model Class Initialized
+INFO - 2024-06-20 08:40:11 --> Form Validation Class Initialized
+ERROR - 2024-06-20 08:40:11 --> Severity: Notice --> Undefined variable: testing_type_id C:\laragon\www\lims1water\application\views\water_sample_reception\index_det2.php 120
+ERROR - 2024-06-20 08:40:11 --> Severity: Notice --> Undefined variable: testing_type_id C:\laragon\www\lims1water\application\views\water_sample_reception\index_det2.php 120
+ERROR - 2024-06-20 08:40:11 --> Severity: Notice --> Undefined variable: testing_type_id C:\laragon\www\lims1water\application\views\water_sample_reception\index_det2.php 120
+INFO - 2024-06-20 08:40:11 --> File loaded: C:\laragon\www\lims1water\application\views\water_sample_reception/index_det2.php
+INFO - 2024-06-20 08:40:11 --> File loaded: C:\laragon\www\lims1water\application\views\template/sidebar.php
+INFO - 2024-06-20 08:40:11 --> File loaded: C:\laragon\www\lims1water\application\views\template.php
+INFO - 2024-06-20 08:40:11 --> Final output sent to browser
+DEBUG - 2024-06-20 08:40:11 --> Total execution time: 0.0705
+INFO - 2024-06-20 08:40:11 --> Config Class Initialized
+INFO - 2024-06-20 08:40:11 --> Hooks Class Initialized
+DEBUG - 2024-06-20 08:40:11 --> UTF-8 Support Enabled
+INFO - 2024-06-20 08:40:11 --> Utf8 Class Initialized
+INFO - 2024-06-20 08:40:11 --> URI Class Initialized
+INFO - 2024-06-20 08:40:11 --> Router Class Initialized
+INFO - 2024-06-20 08:40:11 --> Output Class Initialized
+INFO - 2024-06-20 08:40:11 --> Security Class Initialized
+DEBUG - 2024-06-20 08:40:11 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-06-20 08:40:11 --> Input Class Initialized
+INFO - 2024-06-20 08:40:11 --> Language Class Initialized
+INFO - 2024-06-20 08:40:11 --> Config Class Initialized
+INFO - 2024-06-20 08:40:11 --> Hooks Class Initialized
+ERROR - 2024-06-20 08:40:11 --> 404 Page Not Found: Water_sample_reception/img
+DEBUG - 2024-06-20 08:40:11 --> UTF-8 Support Enabled
+INFO - 2024-06-20 08:40:11 --> Utf8 Class Initialized
+INFO - 2024-06-20 08:40:11 --> URI Class Initialized
+INFO - 2024-06-20 08:40:11 --> Router Class Initialized
+INFO - 2024-06-20 08:40:11 --> Output Class Initialized
+INFO - 2024-06-20 08:40:11 --> Security Class Initialized
+DEBUG - 2024-06-20 08:40:11 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-06-20 08:40:11 --> Input Class Initialized
+INFO - 2024-06-20 08:40:11 --> Language Class Initialized
+INFO - 2024-06-20 08:40:11 --> Loader Class Initialized
+INFO - 2024-06-20 08:40:11 --> Helper loaded: url_helper
+INFO - 2024-06-20 08:40:11 --> Helper loaded: form_helper
+INFO - 2024-06-20 08:40:11 --> Helper loaded: racode_helper
+INFO - 2024-06-20 08:40:11 --> Database Driver Class Initialized
+DEBUG - 2024-06-20 08:40:11 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-06-20 08:40:11 --> Session: Class initialized using 'files' driver.
+INFO - 2024-06-20 08:40:11 --> Controller Class Initialized
+INFO - 2024-06-20 08:40:11 --> Model Class Initialized
+INFO - 2024-06-20 08:40:11 --> Form Validation Class Initialized
+INFO - 2024-06-20 08:40:11 --> Final output sent to browser
+DEBUG - 2024-06-20 08:40:11 --> Total execution time: 0.0607
