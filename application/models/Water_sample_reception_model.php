@@ -245,8 +245,8 @@ class Water_sample_reception_model extends CI_Model
     // Function update data
         function update($id, $data)
         {
-            $this->db->where($this->id, $id);
-            $this->db->update($this->table, $data);
+            $this->db->where('project_id', $id);
+            $this->db->update('sample_reception', $data);
         }
 
     function insert_det($data)

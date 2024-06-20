@@ -88,7 +88,7 @@ class Water_sample_reception extends CI_Controller
 
     public function save() {
         $mode = $this->input->post('mode', TRUE);
-        $id = $this->input->post('project_id', TRUE);
+        $project_id = $this->input->post('project_id', TRUE);
         $dt = new DateTime();
     
         if ($mode == "insert") {
@@ -114,8 +114,8 @@ class Water_sample_reception extends CI_Controller
                 'user_updated' => $this->session->userdata('id_users'),
                 'date_updated' => $dt->format('Y-m-d H:i:s'),
             );
-    
-            $this->Water_sample_reception_model->update($id, $data);
+
+            $this->Water_sample_reception_model->update($project_id, $data);
             $this->session->set_flashdata('message', 'Update Record Success');
         }
     
@@ -155,6 +155,7 @@ class Water_sample_reception extends CI_Controller
                 'user_updated' => $this->session->userdata('id_users'),
                 'date_updated' => $dt->format('Y-m-d H:i:s'),
                 );
+
     
             $this->Water_sample_reception_model->update_det($sample_id, $data);
             $this->session->set_flashdata('message', 'Create Record Success');    
