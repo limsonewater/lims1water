@@ -263,6 +263,7 @@
             // var data = this.parents('tr').data();
             $('#mode').val('edit');
             $('#modal-title').html('<i class="fa fa-pencil-square"></i> Water sample reception | Update<span id="my-another-cool-loader"></span>');
+            $('#project_idx').show();
             $('#project_id').attr('readonly', true);
             $('#project_id').val(data.project_id);
             $('#client_id').val(data.client_id);

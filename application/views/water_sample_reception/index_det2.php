@@ -102,13 +102,13 @@
                                     <input id="id_reqdetail" name="id_reqdetail" type="text" class="form-control input-sm noEnterSubmit" placeholder="PO Number" required>
                                 </div>
                             </div> -->
-
+<!-- 
                             <div class="form-group">
                                 <label for="testing_id" class="col-sm-4 control-label">Testing ID</label>
                                 <div class="col-sm-8">
                                     <input id="testing_id" name="testing_id" type="text" placeholder="Testing ID" class="form-control" required>
                                 </div>
-                            </div>
+                            </div> -->
 
 							<div class="form-group">
 								<label for="testing_type_id" class="col-sm-4 control-label">Testing type</label>
