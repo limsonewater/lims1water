@@ -274,6 +274,19 @@ class Water_sample_reception_model extends CI_Model
         $this->db->delete($this->table);
     }
 
+    // Function insert detail 2
+    function insert_det2($data)
+    {
+        $this->db->insert('sample_reception_testing', $data);
+    }
+    
+    function update_det2($sample_id, $data)
+    {
+        $this->db->where('sample_id', $sample_id);
+        $this->db->update('sample_reception_testing', $data);
+    }
+    
+
     function getClient(){
         $response = array();
         $this->db->select('*');

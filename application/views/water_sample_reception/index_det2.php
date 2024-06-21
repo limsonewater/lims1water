@@ -96,19 +96,6 @@
 									<input id="sample_id2" name="sample_id2" type="hidden" class="form-control input-sm">
                                 </div>
                             </div>
-                            <!-- <div class="form-group">
-                                <label for="id_reqdetail" class="col-sm-4 control-label">PO Number</label>
-                                <div class="col-sm-8">
-                                    <input id="id_reqdetail" name="id_reqdetail" type="text" class="form-control input-sm noEnterSubmit" placeholder="PO Number" required>
-                                </div>
-                            </div> -->
-<!-- 
-                            <div class="form-group">
-                                <label for="testing_id" class="col-sm-4 control-label">Testing ID</label>
-                                <div class="col-sm-8">
-                                    <input id="testing_id" name="testing_id" type="text" placeholder="Testing ID" class="form-control" required>
-                                </div>
-                            </div> -->
 
 							<div class="form-group">
 								<label for="testing_type_id" class="col-sm-4 control-label">Testing type</label>
@@ -191,6 +178,15 @@
 		$('.noEnterSubmit').keypress(function (e) {
 			if (e.which == 13) return false;
 		});
+
+		$('.clockpicker').clockpicker({
+        placement: 'bottom', // clock popover placement
+        align: 'left',       // popover arrow align
+        donetext: 'Done',     // done button text
+        autoclose: true,    // auto close when minute is selected
+        vibrate: true        // vibrate the device when dragging clock hand
+        });      
+		
 						
         $('#compose-modal').on('shown.bs.modal', function () {
 			$('#testing_id').focus();
@@ -208,7 +204,7 @@
         //     }
         // }
 
-		
+		var sample_id = $('#sample_id').val();
 		var base_url = location.hostname;
 		$.fn.dataTableExt.oApi.fnPagingInfo = function(oSettings)
 		{
@@ -223,7 +219,6 @@
 			};
 		};
 
-		var sample_id = $('#sample_id').val();
 		table = $("#example3").DataTable({
 			oLanguage: {
 				sProcessing: "Loading data, please wait..."
@@ -286,15 +281,12 @@
 
 
 		$('#addtombol_det').click(function() {
-			$('#mode_det').val('insert');
+			$('#mode_det2').val('insert');
             $('#modal-title-detail').html('<i class="fa fa-wpforms"></i> New samples<span id="my-another-cool-loader"></span>');
-			$('#testing_id').attr('readonly', false);
-		    $('#testing_id').val('');
-		    $('#sample_id2').val('');
-		    $('#sample_id2').val(sample_id);
-		    $('#testing_type_id').val('');
-		    $('#no_submitted').val('');
-		    $('#sample_barcode').val('');
+			$('#testing_type_id').val('');
+			$('#no_submitted').val('');
+			$('#sample_barcode').val('');
+			$('#sample_id2').val(sample_id); // Assuming sample_id is defined somewhere
 			$('#compose-modal').modal('show');
 		});
 
@@ -302,11 +294,19 @@
 		$('#example3').on('click', '.btn_edit_det', function(){
 			let tr = $(this).parent().parent();
 			let data = table.row(tr).data();
-			// console.log(data);
+			console.log(data);
 			$('#mode_det').val('edit');
 			$('#modal-title-detail').html('<i class="fa fa-pencil-square"></i> Update samples<span id="my-another-cool-loader"></span>');
 			$('#testing_id').attr('readonly', true);
 		    $('#testing_id').val(data.testing_id);
+
+			    // Set the value of the dropdown based on the testing_type
+				$('#testing_type_id option').each(function() {
+					if ($(this).text() === data.testing_type) {
+						$(this).prop('selected', true);
+					}
+				});
+
 		    $('#sample_id2').val(data.sample_id);
             $('#date_collected').val(data.date_collected).trigger('change');
             $('#time_collected').val(data.time_collected).trigger('change');
