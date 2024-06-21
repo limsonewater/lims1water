@@ -94,6 +94,7 @@
                                 <div class="col-sm-9">
                                     <input id="mode_det2" name="mode_det2" type="hidden" class="form-control input-sm">
 									<input id="sample_id2" name="sample_id2" type="hidden" class="form-control input-sm">
+									<input id="testing_id" name="testing_id" type="hidden" class="form-control input-sm">
                                 </div>
                             </div>
 
@@ -295,10 +296,11 @@
 			let tr = $(this).parent().parent();
 			let data = table.row(tr).data();
 			console.log(data);
-			$('#mode_det').val('edit');
+			$('#mode_det2').val('edit');
 			$('#modal-title-detail').html('<i class="fa fa-pencil-square"></i> Update samples<span id="my-another-cool-loader"></span>');
 			$('#testing_id').attr('readonly', true);
 		    $('#testing_id').val(data.testing_id);
+			$('#sample_id2').val(sample_id);
 
 			    // Set the value of the dropdown based on the testing_type
 				$('#testing_type_id option').each(function() {
@@ -307,7 +309,6 @@
 					}
 				});
 
-		    $('#sample_id2').val(data.sample_id);
             $('#date_collected').val(data.date_collected).trigger('change');
             $('#time_collected').val(data.time_collected).trigger('change');
 		    $('#no_submitted').val(data.no_submitted);
