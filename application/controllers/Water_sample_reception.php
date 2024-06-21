@@ -280,6 +280,24 @@ class Water_sample_reception extends CI_Controller
         redirect(site_url('Water_sample_reception/read/'.$id_parent));
     }
 
+    // Function delete detail 2
+    public function delete_detail2($id)
+    {
+        $row = $this->Water_sample_reception_model->get_by_id_detail2($id);
+        if ($row) {
+            $id_parent = $row->sample_id;
+            $data = array(
+                'flag' => 1,
+            );
+
+            $this->Water_sample_reception_model->update_det2($id, $data);
+            $this->session->set_flashdata('message', 'Delete Record Success');
+        } else {
+            $this->session->set_flashdata('message', 'Record Not Found');
+        }
+        redirect(site_url('Water_sample_reception/read2/'.$id_parent));
+    }
+
 
     // public function _rules() 
     // {
