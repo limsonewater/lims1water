@@ -45,7 +45,6 @@ class Water_sample_reception extends CI_Controller
 
     public function subjson2() {
         $id2 = $this->input->get('id2',TRUE);
-        // log_message('debug', 'Received ID: ' . print_r($id, TRUE)); // Log received ID
 
         header('Content-Type: application/json');
         echo $this->Water_sample_reception_model->subjson2($id2);
@@ -82,7 +81,7 @@ class Water_sample_reception extends CI_Controller
                 $this->template->load('template','water_sample_reception/index_det2', $data);
         }
         else {
-            $this->template->load('template','Water_sample_reception/index_det');
+            // $this->template->load('template','Water_sample_reception/index_det');
         }
     }     
 
@@ -163,6 +162,47 @@ class Water_sample_reception extends CI_Controller
 
         redirect(site_url("Water_sample_reception/read/".$project_id2));
     }
+
+    public function savedetail2() 
+    {
+        $mode = $this->input->post('mode_det2',TRUE); // appropiate with the name of form
+        $sample_id = $this->input->post('sample_id2',TRUE);
+
+        $dt = new DateTime();
+    
+        if ($mode == "insert"){
+            $data = array(
+                'sample_id' => $this->input->post('sample_id2', TRUE),
+                'testing_type_id' => $this->input->post('testing_type_id', TRUE),
+                'date_collected' => $this->input->post('date_collected', TRUE),
+                'time_collected' => $this->input->post('time_collected', TRUE),
+                'no_submitted' => $this->input->post('no_submitted', TRUE),
+                'sample_barcode' => $this->input->post('sample_barcode', TRUE),
+                'uuid' => $this->uuid->v4(),
+                'user_created' => $this->session->userdata('id_users'),
+                'date_created' => $dt->format('Y-m-d H:i:s'),
+            );
+
+
+    
+            $this->Water_sample_reception_model->insert_det2($data);
+            $this->session->set_flashdata('message', 'Create Record Success');    
+        } else if ($mode == "edit"){
+            $data = array(
+                'sample_id' => $this->input->post('sample_id2', TRUE),
+                'project_id' => $this->input->post('project_id2', TRUE),
+                'sample_description' => $this->input->post('sample_description', TRUE),
+                'user_updated' => $this->session->userdata('id_users'),
+                'date_updated' => $dt->format('Y-m-d H:i:s'),
+            );
+    
+            $this->Water_sample_reception_model->update_det2($sample_id, $data);
+            $this->session->set_flashdata('message', 'Update Record Success');    
+        }
+    
+        redirect(site_url("Water_sample_reception/read2/".$sample_id));
+    }
+    
 
     public function budreq_print($id) 
     {
