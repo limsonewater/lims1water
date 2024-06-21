@@ -88,7 +88,7 @@ class Water_sample_reception_model extends CI_Model
         }
         else {
             $this->datatables->add_column('action', '<button type="button" class="btn_edit_det btn btn-info btn-sm" aria-hidden="true"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>'." 
-                ".anchor(site_url('Water_sample_reception/delete_detail/$1'),'<i class="fa fa-trash-o" aria-hidden="true"></i>','class="btn btn-danger btn-sm" onclick="javasciprt: return confirm(\'Confirm deleting this sample?\')"'), 'testing_id');
+                ".anchor(site_url('Water_sample_reception/delete_detail2/$1'),'<i class="fa fa-trash-o" aria-hidden="true"></i>','class="btn btn-danger btn-sm" onclick="javasciprt: return confirm(\'Confirm deleting this sample testing ID : $1?\')"'), 'testing_id');
             }
         return $this->datatables->generate();
     }
@@ -141,6 +141,14 @@ class Water_sample_reception_model extends CI_Model
         $this->db->where('flag', '0');
         // $this->db->where('lab', $this->session->userdata('lab'));
         return $this->db->get('sample_reception_sample')->row();
+    }
+
+    // Function get detail2 by id
+    function get_by_id_detail2($id)
+    {
+        $this->db->where('testing_id', $id);
+        $this->db->where('flag', '0');
+        return $this->db->get('sample_reception_testing')->row();
     }
 
     function get_detail($id)
@@ -285,6 +293,13 @@ class Water_sample_reception_model extends CI_Model
     {
         $this->db->where('testing_id', $id);
         $this->db->update('sample_reception_testing', $data);
+    }
+
+    // Function delete detail 2
+    function delete_detail2($id)
+    {
+        $this->db->where('testing_id', $id);
+        $this->db->delete('sample_reception_testing');
     }
     
 
