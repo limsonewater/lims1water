@@ -74,6 +74,7 @@ class Water_sample_reception extends CI_Controller
         $row = $this->Water_sample_reception_model->get_detail2($id);
         if ($row) {
             $data = array(
+                'project_id' => $row->project_id,
                 'sample_id' => $row->sample_id,
                 'sample_description' => $row->sample_description,
                 'test' => $this->Water_sample_reception_model->getTest(),
