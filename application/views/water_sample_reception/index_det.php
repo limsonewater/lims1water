@@ -85,14 +85,16 @@
                 <!--</div> row -->    
 
 				<div class="form-group">
-						<div class="modal-footer clearfix">
+					<div class="modal-footer clearfix">
 	<!--                    <button type="submit" name="Save" value="simpan" class="btn btn-primary"><i class="fa fa-save"></i> Simpan</button> -->
 							<!-- <button type="button" name="excel" id="excel" class="btn btn-success" onclick="location.href='<?php //echo site_url('Water_sample_reception/excel_print'); ?>';"><i class="fa fa-file-excel-o"></i> Excel</button> -->
 							<!-- <button type="button" name="excel" id="excel" class="btn btn-success" onclick="javascript:void(0);"><i class="fa fa-file-excel-o"></i> Excel</button>
 							<button type="button" name="print" id="print" class="btn btn-primary" onclick="javascript:void(0);"><i class="fa fa-print"></i> Print</button> -->
-							<button type="button" name="batal" value="batal" class="btn btn-warning" onclick="javascript:history.go(-1);"><i class="fa fa-times"></i> Close</button>
-						</div>
+						<button type="button" name="batal" value="batal" class="btn btn-warning" onclick="window.location.href='<?= site_url('Water_sample_reception'); ?>';">
+							<i class="fa fa-times"></i> Close
+						</button>
 					</div>
+				</div>
 				
 				</div> <!--footer -->
 
