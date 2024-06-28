@@ -5,7 +5,7 @@
                 <div class="box box-black box-solid">
     
                     <div class="box-header">
-                        <h3 class="box-title">Water | Sample reception</h3>
+                        <h3 class="box-title">Water | Sample reception 1</h3>
                     </div>
         
         <div class="box-body">
@@ -57,10 +57,10 @@
                         <input id="mode" name="mode" type="hidden" class="form-control input-sm">
                         <!-- <input id="id_req" name="id_req" type="hidden" class="form-control input-sm"> -->
 
-                        <div class="form-group" id="project_idx">
+                        <div class="form-group">
                             <label for="project_id" class="col-sm-4 control-label">Project ID</label>
                             <div class="col-sm-8">
-                                <input id="project_id" name="project_id" type="text" class="form-control">
+                                <input id="project_id" name="project_id" placeholder="Project ID" type="text" class="form-control">
                             </div>
                         </div>
 
@@ -249,7 +249,7 @@
         $('#addtombol').click(function() {
             $('#mode').val('insert');
             $('#modal-title').html('<i class="fa fa-wpforms"></i> Water sample reception | New<span id="my-another-cool-loader"></span>');
-            $('#project_idx').hide();
+            // $('#project_idx').hide();
             $('#project_id').val('');
             $('#client_id').val('');
             $('#comments').val('');
@@ -263,7 +263,7 @@
             // var data = this.parents('tr').data();
             $('#mode').val('edit');
             $('#modal-title').html('<i class="fa fa-pencil-square"></i> Water sample reception | Update<span id="my-another-cool-loader"></span>');
-            $('#project_idx').show();
+            // $('#project_idx').show();
             $('#project_id').attr('readonly', true);
             $('#project_id').val(data.project_id);
             $('#client_id').val(data.client_id);

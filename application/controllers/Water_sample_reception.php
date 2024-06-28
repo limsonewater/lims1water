@@ -93,6 +93,7 @@ class Water_sample_reception extends CI_Controller
     
         if ($mode == "insert") {
             $data = array(
+                'project_id' => $this->input->post('project_id', TRUE),
                 'client_id' => $this->input->post('client_id', TRUE),
                 'date_arrival' => $this->input->post('date_arrival', TRUE),
                 'time_arrival' => $this->input->post('time_arrival', TRUE),

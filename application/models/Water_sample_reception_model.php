@@ -213,39 +213,39 @@ class Water_sample_reception_model extends CI_Model
 
 
     // Function to get the latest project_id
-        private function get_latest_project_id() {
-            $this->db->select('project_id');
-            $this->db->order_by('project_id', 'DESC');
-            $this->db->limit(1);
-            $query = $this->db->get('sample_reception');
+        // private function get_latest_project_id() {
+        //     $this->db->select('project_id');
+        //     $this->db->order_by('project_id', 'DESC');
+        //     $this->db->limit(1);
+        //     $query = $this->db->get('sample_reception');
     
-            // Check if there is a previous project_id
-            if ($query->num_rows() > 0) {
-                return $query->row()->project_id;
-            } else {
-                return null;
-            }
-        }
+        //     // Check if there is a previous project_id
+        //     if ($query->num_rows() > 0) {
+        //         return $query->row()->project_id;
+        //     } else {
+        //         return null;
+        //     }
+        // }
     
     // Function to generate the next project_id
-        private function generate_project_id() {
-            $latest_id = $this->get_latest_project_id();
+        // private function generate_project_id() {
+        //     $latest_id = $this->get_latest_project_id();
     
-            if ($latest_id) {
-                $parts = explode('-', $latest_id);
-                $number = intval($parts[1]) + 1;
-                $new_id = sprintf('%s-%05d', '24', $number);
-                return $new_id;
-            } else {
-                // If there is no previous project_id, start from '24-00001'
-                return '24-00001';
-            }
-        }
+        //     if ($latest_id) {
+        //         $parts = explode('-', $latest_id);
+        //         $number = intval($parts[1]) + 1;
+        //         $new_id = sprintf('%s-%05d', '24', $number);
+        //         return $new_id;
+        //     } else {
+        //         // If there is no previous project_id, start from '24-00001'
+        //         return '24-00001';
+        //     }
+        // }
     
 
     // Fuction insert data
         public function insert($data) {
-            $data['project_id'] = $this->generate_project_id();
+            // $data['project_id'] = $this->generate_project_id();
             $this->db->insert($this->table,  $data);
         }
     
