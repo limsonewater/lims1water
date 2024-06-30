@@ -5,7 +5,7 @@
                 <div class="box box-black box-solid">
     
                     <div class="box-header">
-                        <h3 class="box-title">Water | Sample reception 1</h3>
+                        <h3 class="box-title">Water | Sample reception </h3>
                     </div>
         
         <div class="box-body">
@@ -22,6 +22,7 @@
                 <tr>
 		    <th>Project ID</th>
 		    <th>Client ID</th>
+            <th>Lab Tech</th>
 		    <th>Date arrival</th>
 		    <th>Time arrival</th>
 		    <th>Comments</th>
@@ -80,6 +81,24 @@
                                 }
                                     ?>
                             </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="id_person" class="col-sm-4 control-label">Lab Tech</label>
+                            <div class="col-sm-8">
+                                <select id="id_person" name="id_person" class="form-control">
+                                    <option>-- Select lab tech --</option>
+                                    <?php
+                                        foreach($labtech as $row) {
+                                            if ($id_person == $row['id_person']) {
+                                                echo "<option value='".$row['id_person']."' selected='selected'>".$row['realname']."</option>";
+                                            } else {
+                                                echo "<option value='".$row['id_person']."'>".$row['realname']."</option>";
+                                            }
+                                        }
+                                    ?>
+                                </select>
                             </div>
                         </div>
 
@@ -220,6 +239,7 @@
                 // },
                 {"data": "project_id"},
                 {"data": "client_name"},
+                {"data": "initial"},
                 {"data": "date_arrival"},
                 {"data": "time_arrival"},
                 {"data": "comments"},
@@ -252,6 +272,7 @@
             // $('#project_idx').hide();
             $('#project_id').val('');
             $('#client_id').val('');
+            $('#id_person').val('');
             $('#comments').val('');
             $('#compose-modal').modal('show');
         });
@@ -267,6 +288,7 @@
             $('#project_id').attr('readonly', true);
             $('#project_id').val(data.project_id);
             $('#client_id').val(data.client_id);
+            $('#id_person').val(data.id_person);
             $('#date_arrival').val(data.date_arrival).trigger('change');
             $('#time_arrival').val(data.time_arrival).trigger('change');
             $('#comments').val(data.comments);

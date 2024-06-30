@@ -29,6 +29,7 @@ class Water_sample_reception extends CI_Controller
     public function index()
     {
         $data['client'] = $this->Water_sample_reception_model->getClient();
+        $data['labtech'] = $this->Water_sample_reception_model->getLabTech();
         $this->template->load('template','Water_sample_reception/index', $data);
     } 
     
@@ -95,6 +96,7 @@ class Water_sample_reception extends CI_Controller
             $data = array(
                 'project_id' => $this->input->post('project_id', TRUE),
                 'client_id' => $this->input->post('client_id', TRUE),
+                'id_person' => $this->input->post('id_person', TRUE),
                 'date_arrival' => $this->input->post('date_arrival', TRUE),
                 'time_arrival' => $this->input->post('time_arrival', TRUE),
                 'comments' => trim($this->input->post('comments', TRUE)),
@@ -109,6 +111,7 @@ class Water_sample_reception extends CI_Controller
         } else if ($mode == "edit") {
             $data = array(
                 'client_id' => $this->input->post('client_id', TRUE),
+                'id_person' => $this->input->post('id_person', TRUE),
                 'date_arrival' => $this->input->post('date_arrival', TRUE),
                 'time_arrival' => $this->input->post('time_arrival', TRUE),
                 'comments' => trim($this->input->post('comments', TRUE)),

@@ -17,11 +17,12 @@ class Water_sample_reception_model extends CI_Model
 
     // datatables
     function json() {
-        $this->datatables->select('sample_reception.project_id, sample_reception.client_id, 
+        $this->datatables->select('sample_reception.project_id, sample_reception.client_id,sample_reception.id_person, ref_person.initial,
         ref_client.client_name, sample_reception.date_arrival, sample_reception.time_arrival, 
         sample_reception.comments, sample_reception.flag');
         $this->datatables->from('sample_reception');
         $this->datatables->join('ref_client', 'sample_reception.client_id = ref_client.client_id', 'left');
+        $this->datatables->join('ref_person', 'sample_reception.id_person = ref_person.id_person', 'left');
         // $this->datatables->where('Water_sample_reception.id_country', $this->session->userdata('lab'));
         $this->datatables->where('sample_reception.flag', '0');
         $lvl = $this->session->userdata('id_user_level');
@@ -305,7 +306,7 @@ class Water_sample_reception_model extends CI_Model
 
     function getClient(){
         $response = array();
-        $this->db->select('*');
+        $this->db->select('');
         // $this->db->where('position', 'Lab Tech');
         $this->db->where('flag', '0');
         $this->db->order_by('client_name');
@@ -314,7 +315,17 @@ class Water_sample_reception_model extends CI_Model
         return $response;
       }
 
-    function getLabtech(){
+      function getLabtech() {
+        $response = array();
+        $this->db->select('*');
+        $this->db->where('flag', '0');
+        $this->db->order_by('realname');
+        $labTech = $this->db->get('ref_person');
+        $response = $labTech->result_array();
+        return $response;
+      }
+
+    // function getLabtech(){
         // $response = array();
         // $this->db->select('*');
         // // $this->db->where('position', 'Lab Tech');
@@ -324,7 +335,7 @@ class Water_sample_reception_model extends CI_Model
         // $q = $this->db->get('ref_person');
         // $response = $q->result_array();
         // return $response;
-      }
+    //   }
 
       function getObjective(){
         // $response = array();
