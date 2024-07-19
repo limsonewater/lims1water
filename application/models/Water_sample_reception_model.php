@@ -17,11 +17,12 @@ class Water_sample_reception_model extends CI_Model
 
     // datatables
     function json() {
-        $this->datatables->select('sample_reception.project_id, sample_reception.client_id, 
-        ref_client.client_name, sample_reception.date_arrival, sample_reception.time_arrival, 
+        $this->datatables->select('sample_reception.project_id, sample_reception.id_person, ref_person.initial,
+        sample_reception.date_arrival, sample_reception.time_arrival, sample_reception.client_sample_id, ref_classification.classification_name, sample_reception.classification_id, 
         sample_reception.comments, sample_reception.flag');
         $this->datatables->from('sample_reception');
-        $this->datatables->join('ref_client', 'sample_reception.client_id = ref_client.client_id', 'left');
+        $this->datatables->join('ref_classification', 'sample_reception.classification_id = ref_classification.classification_id', 'left');
+        $this->datatables->join('ref_person', 'sample_reception.id_person = ref_person.id_person', 'left');
         // $this->datatables->where('Water_sample_reception.id_country', $this->session->userdata('lab'));
         $this->datatables->where('sample_reception.flag', '0');
         $lvl = $this->session->userdata('id_user_level');
@@ -41,10 +42,11 @@ class Water_sample_reception_model extends CI_Model
     }
 
     function subjson($id) {
-        $this->datatables->select('sample_id, project_id, sample_description, flag');
-        $this->datatables->from('sample_reception_sample');
-        $this->datatables->where('flag', '0');
-        $this->datatables->where('project_id', $id);
+        $this->datatables->select('a.sample_id, a.project_id, b.testing_type, a.testing_type_id, a.date_collected, a.time_collected, a.sample_barcode, a.flag');
+        $this->datatables->from('sample_reception_sample a');
+        $this->datatables->join('ref_testing b', 'a.testing_type_id = b.testing_type_id', 'right');
+        $this->datatables->where('a.flag', '0');
+        $this->datatables->where('a.project_id', $id);
         $lvl = $this->session->userdata('id_user_level');
         if ($lvl == 7){
             $this->datatables->add_column('action', anchor(site_url('Water_sample_reception/read2/$1'),'<i class="fa fa-th-list" aria-hidden="true"></i>', array('class' => 'btn btn-info btn-sm')), 'sample_id');
@@ -54,8 +56,7 @@ class Water_sample_reception_model extends CI_Model
                 ".'<button type="button" class="btn_edit_det btn btn-info btn-sm" aria-hidden="true"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>', 'sample_id');
         }
         else {
-            $this->datatables->add_column('action', anchor(site_url('Water_sample_reception/read2/$1'),'<i class="fa fa-th-list" aria-hidden="true"></i>', array('class' => 'btn btn-info btn-sm')) ."
-                ".'<button type="button" class="btn_edit_det btn btn-info btn-sm" aria-hidden="true"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>'." 
+            $this->datatables->add_column('action', '<button type="button" class="btn_edit_det btn btn-info btn-sm" aria-hidden="true"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>'." 
                 ".anchor(site_url('Water_sample_reception/delete_detail/$1'),'<i class="fa fa-trash-o" aria-hidden="true"></i>','class="btn btn-danger btn-sm" onclick="javasciprt: return confirm(\'Confirm deleting sample ID : $1 ?\')"'), 'sample_id');
         }
 
@@ -155,7 +156,8 @@ class Water_sample_reception_model extends CI_Model
     {
       $response = array();
       $this->db->select('*');
-      $this->db->join('ref_client', 'sample_reception.client_id=ref_client.client_id', 'left');
+      $this->db->join('ref_classification', 'sample_reception.classification_id=ref_classification.classification_id', 'left');
+      $this->db->join('ref_person', 'sample_reception.id_person=ref_person.id_person', 'left');
       $this->db->where('sample_reception.project_id', $id);
       // $this->db->where('lab', $this->session->userdata('lab'));
       $this->db->where('sample_reception.flag', '0');
@@ -213,40 +215,40 @@ class Water_sample_reception_model extends CI_Model
 
 
     // Function to get the latest project_id
-        private function get_latest_project_id() {
-            $this->db->select('project_id');
-            $this->db->order_by('project_id', 'DESC');
-            $this->db->limit(1);
-            $query = $this->db->get('sample_reception');
+        // private function get_latest_sample_id() {
+        //     $this->db->select('sample_id');
+        //     $this->db->order_by('sample_id', 'DESC');
+        //     $this->db->limit(1);
+        //     $query = $this->db->get('sample_reception_sample');
     
-            // Check if there is a previous project_id
-            if ($query->num_rows() > 0) {
-                return $query->row()->project_id;
-            } else {
-                return null;
-            }
-        }
+        //     // Check if there is a previous project_id
+        //     if ($query->num_rows() > 0) {
+        //         return $query->row()->sample_id;
+        //     } else {
+        //         return null;
+        //     }
+        // }
     
     // Function to generate the next project_id
-        private function generate_project_id() {
-            $latest_id = $this->get_latest_project_id();
+        // private function generate_sample_id() {
+        //     $latest_id = $this->get_latest_sample_id();
     
-            if ($latest_id) {
-                $parts = explode('-', $latest_id);
-                $number = intval($parts[1]) + 1;
-                $new_id = sprintf('%s-%05d', '24', $number);
-                return $new_id;
-            } else {
-                // If there is no previous project_id, start from '24-00001'
-                return '24-00001';
-            }
-        }
+        //     if ($latest_id) {
+        //         $parts = explode('-', $latest_id);
+        //         $number = intval($parts[1]) + 1;
+        //         $new_id = sprintf('%s-%05d', '24', $number);
+        //         return $new_id;
+        //     } else {
+        //         // If there is no previous project_id, start from '24-00001'
+        //         return '24-00001';
+        //     }
+        // }
     
 
     // Fuction insert data
         public function insert($data) {
-            $data['project_id'] = $this->generate_project_id();
-            $this->db->insert($this->table,  $data);
+            // $data['project_id'] = $this->generate_project_id();
+            $this->db->insert('sample_reception',  $data);
         }
     
 
@@ -260,6 +262,10 @@ class Water_sample_reception_model extends CI_Model
     function insert_det($data)
     {
         $this->db->insert('sample_reception_sample', $data);
+    }
+
+    function insert_test($data) {
+        $this->db->insert('sample_reception_testing', $data);
     }
     
 
@@ -303,27 +309,24 @@ class Water_sample_reception_model extends CI_Model
     }
     
 
-    function getClient(){
+    function getClassification(){
         $response = array();
         $this->db->select('*');
-        // $this->db->where('position', 'Lab Tech');
         $this->db->where('flag', '0');
-        $this->db->order_by('client_name');
-        $q = $this->db->get('ref_client');
+        $this->db->order_by('classification_name');
+        $q = $this->db->get('ref_classification');
         $response = $q->result_array();
         return $response;
       }
 
-    function getLabtech(){
-        // $response = array();
-        // $this->db->select('*');
-        // // $this->db->where('position', 'Lab Tech');
-        // $this->db->where('flag', '0');
-        // // $this->db->where('id_country', $this->session->userdata('lab'));
-        // $this->db->order_by('realname');
-        // $q = $this->db->get('ref_person');
-        // $response = $q->result_array();
-        // return $response;
+      function getLabtech() {
+        $response = array();
+        $this->db->select('*');
+        $this->db->where('flag', '0');
+        $this->db->order_by('realname');
+        $labTech = $this->db->get('ref_person');
+        $response = $labTech->result_array();
+        return $response;
       }
 
       function getObjective(){

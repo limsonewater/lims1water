@@ -28,7 +28,8 @@ class Water_sample_reception extends CI_Controller
 
     public function index()
     {
-        $data['client'] = $this->Water_sample_reception_model->getClient();
+        $data['classification'] = $this->Water_sample_reception_model->getClassification();
+        $data['labtech'] = $this->Water_sample_reception_model->getLabTech();
         $this->template->load('template','Water_sample_reception/index', $data);
     } 
     
@@ -52,14 +53,19 @@ class Water_sample_reception extends CI_Controller
 
     public function read($id)
     {
+        $data['testing_type'] = $this->Water_sample_reception_model->getTest();
         $row = $this->Water_sample_reception_model->get_detail($id);
         if ($row) {
             $data = array(
                 'project_id' => $row->project_id,
-                'client_name' => $row->client_name,
+                // 'client_name' => $row->client_name,
+                'initial' => $row->initial,
                 'date_arrival' => $row->date_arrival,
                 'time_arrival' => $row->time_arrival,
+                'client_sample_id' => $row->client_sample_id,
+                'classification_name' => $row->classification_name,
                 'comments' => $row->comments,
+                'testing_type' => $this->Water_sample_reception_model->getTest(),
                 );
                 $this->template->load('template','water_sample_reception/index_det', $data);
         }
@@ -93,10 +99,17 @@ class Water_sample_reception extends CI_Controller
     
         if ($mode == "insert") {
             $data = array(
-                'client_id' => $this->input->post('client_id', TRUE),
+                'project_id' => $this->input->post('project_id', TRUE),
+                // 'client_id' => $this->input->post('client_id', TRUE),
+                'id_person' => $this->input->post('id_person', TRUE),
                 'date_arrival' => $this->input->post('date_arrival', TRUE),
                 'time_arrival' => $this->input->post('time_arrival', TRUE),
+                'client_sample_id' => $this->input->post('client_sample_id', TRUE),
+                'classification_id' => $this->input->post('classification_id', TRUE),
                 'comments' => trim($this->input->post('comments', TRUE)),
+                'date_collected' => $this->input->post('date_collected',TRUE),
+                'time_collected' => $this->input->post('time_collected',TRUE),
+                'flag' => '0',
                 'uuid' => $this->uuid->v4(),
                 'user_created' => $this->session->userdata('id_users'),
                 'date_created' => $dt->format('Y-m-d H:i:s'),
@@ -107,12 +120,19 @@ class Water_sample_reception extends CI_Controller
 
         } else if ($mode == "edit") {
             $data = array(
-                'client_id' => $this->input->post('client_id', TRUE),
+                // 'client_id' => $this->input->post('client_id', TRUE),
+                'id_person' => $this->input->post('id_person', TRUE),
                 'date_arrival' => $this->input->post('date_arrival', TRUE),
                 'time_arrival' => $this->input->post('time_arrival', TRUE),
+                'client_sample_id' => $this->input->post('client_sample_id', TRUE),
+                'classification_id' => $this->input->post('classification_id', TRUE),
                 'comments' => trim($this->input->post('comments', TRUE)),
-                'user_updated' => $this->session->userdata('id_users'),
-                'date_updated' => $dt->format('Y-m-d H:i:s'),
+                'date_collected' => $this->input->post('date_collected',TRUE),
+                'time_collected' => $this->input->post('time_collected',TRUE),
+                'flag' => '0',
+                'uuid' => $this->uuid->v4(),
+                'user_created' => $this->session->userdata('id_users'),
+                'date_created' => $dt->format('Y-m-d H:i:s'),
             );
 
             $this->Water_sample_reception_model->update($project_id, $data);
@@ -123,41 +143,89 @@ class Water_sample_reception extends CI_Controller
     }
 
 
-    public function savedetail() 
+    // public function savedetail() 
+    // {
+    //     $mode = $this->input->post('mode_det',TRUE);
+    //     $sample_id = $this->input->post('sample_id',TRUE);
+    //     $project_id2 = $this->input->post('project_id2',TRUE);
+    //     $dt = new DateTime();
+
+    //     if ($mode=="insert"){
+    //         $data = array(
+    //             'sample_id' => $this->input->post('sample_id',TRUE),
+    //             'project_id' => $this->input->post('project_id2',TRUE),
+    //             'sample_description' => $this->input->post('sample_description',TRUE),
+    //             'uuid' => $this->uuid->v4(),
+    //             // 'lab' => $this->session->userdata('lab'),
+    //             'user_created' => $this->session->userdata('id_users'),
+    //             'date_created' => $dt->format('Y-m-d H:i:s'),
+    //             );
+
+    //         $this->Water_sample_reception_model->insert_det($data);
+    //         $this->session->set_flashdata('message', 'Create Record Success');    
+      
+    //     }
+    //     else if ($mode=="edit"){
+    //         $data = array(
+    //             'sample_id' => $this->input->post('sample_id',TRUE),
+    //             'project_id' => $this->input->post('project_id2',TRUE),
+    //             'sample_description' => $this->input->post('sample_description',TRUE),
+    //             // 'uuid' => $this->uuid->v4(),
+    //             // 'lab' => $this->session->userdata('lab'),
+    //             'user_updated' => $this->session->userdata('id_users'),
+    //             'date_updated' => $dt->format('Y-m-d H:i:s'),
+    //             );
+
+    
+    //         $this->Water_sample_reception_model->update_det($sample_id, $data);
+    //         $this->session->set_flashdata('message', 'Create Record Success');    
+    //     }
+
+    //     redirect(site_url("Water_sample_reception/read/".$project_id2));
+    // }
+
+        public function savedetail() 
     {
         $mode = $this->input->post('mode_det',TRUE);
         $sample_id = $this->input->post('sample_id',TRUE);
         $project_id2 = $this->input->post('project_id2',TRUE);
+        $testing_types = $this->input->post('testing_type_id', TRUE);
         $dt = new DateTime();
 
         if ($mode=="insert"){
-            $data = array(
-                'sample_id' => $this->input->post('sample_id',TRUE),
-                'project_id' => $this->input->post('project_id2',TRUE),
-                'sample_description' => $this->input->post('sample_description',TRUE),
-                'uuid' => $this->uuid->v4(),
-                // 'lab' => $this->session->userdata('lab'),
-                'user_created' => $this->session->userdata('id_users'),
-                'date_created' => $dt->format('Y-m-d H:i:s'),
-                );
+                    $data_sample = array(
+                        // 'sample_id' => $this->input->post('sample_id', TRUE),
+                        'project_id' => $this->input->post('project_id2', TRUE),
+                        'testing_type_id' => $this->input->post('testing_type_id', TRUE),
+                        // 'sample_description' => $this->input->post('sample_description', TRUE),
+                        'date_collected' => $this->input->post('date_collected', TRUE),
+                        'time_collected' => $this->input->post('time_collected', TRUE),
+                        // 'no_submitted' => $this->input->post('no_submitted', TRUE),
+                        'sample_barcode' => $this->input->post('sample_barcode', TRUE),
+                        'uuid' => $this->uuid->v4(),
+                        'user_created' => $this->session->userdata('id_users'),
+                        'date_created' => $dt->format('Y-m-d H:i:s'),
+                    );
 
-            $this->Water_sample_reception_model->insert_det($data);
+            $this->Water_sample_reception_model->insert_det($data_sample);
             $this->session->set_flashdata('message', 'Create Record Success');    
       
         }
         else if ($mode=="edit"){
-            $data = array(
-                'sample_id' => $this->input->post('sample_id',TRUE),
-                'project_id' => $this->input->post('project_id2',TRUE),
-                'sample_description' => $this->input->post('sample_description',TRUE),
-                // 'uuid' => $this->uuid->v4(),
-                // 'lab' => $this->session->userdata('lab'),
-                'user_updated' => $this->session->userdata('id_users'),
-                'date_updated' => $dt->format('Y-m-d H:i:s'),
-                );
-
-    
-            $this->Water_sample_reception_model->update_det($sample_id, $data);
+            $data_sample = array(
+                // 'sample_id' => $this->input->post('sample_id', TRUE),
+                'project_id' => $this->input->post('project_id2', TRUE),
+                'testing_type_id' => $this->input->post('testing_type_id', TRUE),
+                // 'sample_description' => $this->input->post('sample_description', TRUE),
+                'date_collected' => $this->input->post('date_collected', TRUE),
+                'time_collected' => $this->input->post('time_collected', TRUE),
+                // 'no_submitted' => $this->input->post('no_submitted', TRUE),
+                'sample_barcode' => $this->input->post('sample_barcode', TRUE),
+                'uuid' => $this->uuid->v4(),
+                'user_created' => $this->session->userdata('id_users'),
+                'date_created' => $dt->format('Y-m-d H:i:s'),
+            );
+            $this->Water_sample_reception_model->update_det($sample_id, $data_sample);
             $this->session->set_flashdata('message', 'Create Record Success');    
         }
 
