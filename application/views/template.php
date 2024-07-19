@@ -65,13 +65,15 @@
     <body class="hold-transition skin-blue sidebar-mini">
         <div class="wrapper">
 
-            <header class="main-header">
+            <header class="main-header white">
                 <!-- Logo -->
                 <a href="<?php echo base_url() ?>index.php/welcome" class="logo">
                     <!-- mini logo for sidebar mini 50x50 pixels -->
                     <span class="logo-mini">R<b>L</b></span>
                     <!-- logo for regular state and mobile devices -->
-                    <span class="logo-lg">1WATER|<b>LIMS</b></span>
+                    <span class="logo-lg">
+                    <img src="<?php echo base_url('img/onewaterlogo.png'); ?>" class="user-image" alt="User Image" style="width: 200px; height: 55px; float: left; margin-top: -7px;">
+                    </span>
                     <!-- <span class="logo-lg">RISE|<b><mark>LIMS</mark>2.0</b></span> -->
                     <!-- <span class="logo-lg">RISE|<b><span style="background-color: #FFFFFF; color: #000000">LIMS</span>2.0</b></span> -->
                     
