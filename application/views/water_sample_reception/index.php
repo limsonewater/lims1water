@@ -20,11 +20,12 @@
         <table class="table table-bordered table-striped tbody" id="mytable" style="width:100%">
             <thead>
                 <tr>
-		    <th>Project ID</th>
-		    <th>Client ID</th>
-            <th>Lab Tech</th>
-		    <th>Date arrival</th>
-		    <th>Time arrival</th>
+		    <th>Client</th>
+		    <th>Received Lab</th>
+		    <th>Date Of Sample Arrival</th>
+		    <th>Time Of Sample Arrival</th>
+            <th>Client Sample ID</th>
+            <th>Type of Classification</th>
 		    <th>Comments</th>
 		    <th width="120px">Action</th>
                 </tr>
@@ -59,36 +60,17 @@
                         <!-- <input id="id_req" name="id_req" type="hidden" class="form-control input-sm"> -->
 
                         <div class="form-group">
-                            <label for="project_id" class="col-sm-4 control-label">Project ID</label>
+                            <label for="project_id" class="col-sm-4 control-label">Client</label>
                             <div class="col-sm-8">
-                                <input id="project_id" name="project_id" placeholder="Project ID" type="text" class="form-control">
+                                <input id="project_id" name="project_id" placeholder="Client (as on CoC)" type="text" class="form-control">
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <label for="client_id" class="col-sm-4 control-label">Client</label>
-                            <div class="col-sm-8" >
-                            <select id='client_id' name="client_id" class="form-control">
-                                <option>-- Select client --</option>
-                                <?php
-                                foreach($client as $row){
-									if ($client_id == $row['client_id']) {
-										echo "<option value='".$row['client_id']."' selected='selected'>".$row['client_name']."</option>";
-									}
-									else {
-                                        echo "<option value='".$row['client_id']."'>".$row['client_name']."</option>";
-                                    }
-                                }
-                                    ?>
-                            </select>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="id_person" class="col-sm-4 control-label">Lab Tech</label>
+                            <label for="id_person" class="col-sm-4 control-label">Received Lab</label>
                             <div class="col-sm-8">
                                 <select id="id_person" name="id_person" class="form-control">
-                                    <option>-- Select lab tech --</option>
+                                    <option>-- Select Received Lab --</option>
                                     <?php
                                         foreach($labtech as $row) {
                                             if ($id_person == $row['id_person']) {
@@ -121,6 +103,32 @@
                                 <span class="glyphicon glyphicon-time"></span>
                                 </span>
                                 </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="client_sample_id" class="col-sm-4 control-label">Client Sample ID </label>
+                            <div class="col-sm-8">
+                                <input id="client_sample_id" name="client_sample_id" placeholder="Client Sample ID" type="text" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="classification_id" class="col-sm-4 control-label">Type of Classification</label>
+                            <div class="col-sm-8" >
+                            <select id='classification_id' name="classification_id" class="form-control">
+                                <option>-- Select Type of Classification --</option>
+                                <?php
+                                foreach($classification as $row){
+									if ($classification_id == $row['classification_id']) {
+										echo "<option value='".$row['classification_id']."' selected='selected'>".$row['classification_name']."</option>";
+									}
+									else {
+                                        echo "<option value='".$row['classification_id']."'>".$row['classification_name']."</option>";
+                                    }
+                                }
+                                    ?>
+                            </select>
                             </div>
                         </div>
 
@@ -238,10 +246,11 @@
                 //     "orderable": false
                 // },
                 {"data": "project_id"},
-                {"data": "client_name"},
                 {"data": "initial"},
                 {"data": "date_arrival"},
                 {"data": "time_arrival"},
+                {"data": "client_sample_id"},
+                {"data": "classification_name"},
                 {"data": "comments"},
                 {
                     "data" : "action",
@@ -271,8 +280,10 @@
             $('#modal-title').html('<i class="fa fa-wpforms"></i> Water sample reception | New<span id="my-another-cool-loader"></span>');
             // $('#project_idx').hide();
             $('#project_id').val('');
-            $('#client_id').val('');
+            $('#initial').val('');
             $('#id_person').val('');
+            $('#client_sample_id').val('');
+            $('#classification_id').val('');
             $('#comments').val('');
             $('#compose-modal').modal('show');
         });
@@ -287,10 +298,12 @@
             // $('#project_idx').show();
             $('#project_id').attr('readonly', true);
             $('#project_id').val(data.project_id);
-            $('#client_id').val(data.client_id);
+            // $('#client_id').val(data.client_id);
             $('#id_person').val(data.id_person);
             $('#date_arrival').val(data.date_arrival).trigger('change');
             $('#time_arrival').val(data.time_arrival).trigger('change');
+            $('#client_sample_id').val(data.client_sample_id);
+            $('#classification_id').val(data.classification_id);
             $('#comments').val(data.comments);
             $('#compose-modal').modal('show');
         });  
